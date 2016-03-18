@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="AreasPlotChart" mainattr="GOODS_ID">
+    <mapingenty type="query">
+
+select * from (
+select 
+t1.goods_id, 
+(select t.goods_name from PlantLot t where t.goods_id = t1.goods_id and rownum&lt;=1) goods_name,
+(select t.cofarmer_id from PlantLot t where t.goods_id = t1.goods_id and rownum&lt;=1) cofarmer_id,
+(
+select co.area_id from CoFarmer co , PlantLot pl where co.cofarmer_id = pl.cofarmer_id and pl.goods_id = t1.goods_id and rownum&lt;=1
+) area_id,
+SUM(Areas) AS Areas
+from PlantLot t1
+group by t1.goods_id)</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="GOODS_ID" maxlength="36" datatype="String" type="PK">
+        <mapingcol datatype="CHAR">GOODS_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODS_NAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">GOODS_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">COFARMER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AREA_ID" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">AREA_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AREAS" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">AREAS</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

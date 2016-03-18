@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="Package" mainattr="PACKAGE_UID">
+    <mapingenty type="table">PACKAGE</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="PACKAGE_UID" maxlength="72" datatype="String" type="PK" remark="主键">
+        <mapingcol datatype="CHAR">PACKAGE_UID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PACKAGE_NO" maxlength="240" datatype="String" type="COL" remark="编码自动生成">
+        <mapingcol datatype="VARCHAR2">PACKAGE_NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PACKAGE_DATE" maxlength="20" datatype="DateTime" type="COL" remark="包装日期">
+        <mapingcol datatype="DATE">PACKAGE_DATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_ID" maxlength="72" datatype="String" type="COL" remark="农场id,CoFarmer表CoFarmer_ID">
+        <mapingcol datatype="CHAR">COFARMER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATEUSER" maxlength="32" datatype="String" type="COL" remark="开票人">
+        <mapingcol datatype="VARCHAR2">OPERATEUSER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_USER" maxlength="100" datatype="String" type="COL" remark="创建人">
+        <mapingcol datatype="VARCHAR2">CREATE_USER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_TIME" maxlength="20" datatype="DateTime" type="COL" remark="创建时间">
+        <mapingcol datatype="DATE">CREATE_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MODIFIED_USER" maxlength="100" datatype="String" type="COL" remark="修改人">
+        <mapingcol datatype="VARCHAR2">MODIFIED_USER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MODIFIED_TIME" maxlength="20" datatype="DateTime" type="COL" remark="修改时间">
+        <mapingcol datatype="DATE">MODIFIED_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="UNITID" maxlength="10" datatype="Long" type="COL" remark="单位id,表unitsUNITID">
+        <mapingcol datatype="NUMBER">UNITID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ISACTIVE" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">ISACTIVE</mapingcol>
+      </attr>
+      <attr floatlength="2" name="AMOUT" maxlength="38" datatype="Float" type="COL" remark="包装数量">
+        <mapingcol datatype="NUMBER">AMOUT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOOD_VALUE" maxlength="100" datatype="String" type="COL" remark="产品">
+        <mapingcol datatype="VARCHAR2">GOOD_VALUE</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="CSale" mainattr="BILL_ID">
+    <mapingenty type="table">CSALE</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="BILL_ID" maxlength="36" datatype="String" type="PK">
+        <mapingcol datatype="VARCHAR2">BILL_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="BILL_NO" maxlength="120" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">BILL_NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">COFARMER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="RESELLER_NAME" maxlength="256" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">RESELLER_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OP_DATE" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">OP_DATE</mapingcol>
+      </attr>
+      <attr floatlength="2" name="AMOUNT" maxlength="38" datatype="Float" type="COL">
+        <mapingcol datatype="NUMBER">AMOUNT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATORS" maxlength="256" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">OPERATORS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="NOTES" maxlength="500" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">NOTES</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

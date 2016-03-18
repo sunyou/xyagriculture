@@ -1,0 +1,178 @@
+
+
+/*header*/
+.header { background:url(../images/top_bg.gif) repeat-x top center; height:100px; width:100%; position: relative; border-bottom: 3px solid #ddd; }
+.header .logo{position: absolute; left:10px; top:8px;}
+.header .logo h3{ font-size:20px;font-weight:500; color:#275d0c; display: inline-table; margin-left:10px; }
+.header .topRight{ width:80%; }
+.header .quickMenu{ position: absolute; right:20px; }
+.header .quickMenu button{ background:#1fb5ad; border:none; height:24px; width:50px; color:#fff; border-radius:5px; font-size:14px; margin:20px 20px 0 0;}
+.header .quickMenu .btn{box-shadow: none;}
+.header .quickMenu button:hover{ background:#80b566; color:#fff; border:0;}
+.header .loginInfo{ height: 50px; line-height: 65px; font-size: 14px; margin-right:8px;}
+.header .loginInfo a{ color:#4f962d;}
+
+.header .menu{ height:33px; line-height:33px; font-size:14px; position: absolute; left:150px; bottom:0; }
+.header .menu ul{margin-left:5px;}
+.header .menu li{ float:left;  margin-right:10px;}
+.header .menu li a{ text-decoration:none; border-top-left-radius:5px;border-top-right-radius:5px; background:#d1ecb1; color:#333; display: block; padding:0 15px; overflow: hidden; }
+.header .menu li a:hover,.header .menu li a.current{ color:#fff; border-top-left-radius:5px;border-top-right-radius:5px; cursor:pointer; background:#80b566;}
+
+/*宸︿晶*/
+.content{ overflow:hidden;}
+.content .left{ width:222px; background:#fff; /*padding-bottom:80px;*/ margin-bottom:-300000px; padding-bottom:300000px; }
+.content .left dl{} 
+.content .left dl h5{background:#fff; line-height:50px; font-weight:500; height:50px;font-size:18px; border-bottom:1px solid #dbdbdb;}
+.content .left dl h5 a{ color:#333; display:block;}
+.content .left dl h5 i{ font-style:normal;}
+
+.content .left dl dt a{ display:block; width:100%; border-bottom:1px solid #dbdbdb; color:#333;  height:34px; font-size:14px; line-height:34px; text-indent:30px; color:#666; font-weight: 500;}
+.content .left dl dt a:hover,.content .left dl dt a.current{ background-color:#eee; font-weight: 700;}
+.content .left dl dd a{ display:block; width:100%; border-bottom:1px solid #dbdbdb; color:#333; background-position: 30px 10px; height:34px; font-size:14px; line-height:34px; text-indent:40px; color:#666;font-weight: 500;}
+.content .left dl dd a:hover,.content .left dl dd a.current{ background-color:#eee;}
+
+
+.content .l_close{ background:#cccccc; width:13px; margin-bottom:-9999px;padding-bottom:9999px;}
+.content .l_close img{margin-top:200px;}
+
+.content .right{ width:85%; }
+.content .right .tab{background:url(../images/tab_bg.gif) repeat-x; height:39px; line-height:39px; width:100%; }
+.content .right .tab li{ float:left;  /*+width:12%;*/  border-right:#c9c9c9 solid 1px; background:url(../images/tab_bg.gif) repeat-x; position:relative;}
+.content .right .tab a{ padding:0 20px;  display:block;  font-size:16px; color:#333; }
+.content .right .tab li:hover,.content .right .tab a.current { background:#eee; color:#333; }
+.content .right .tab li:hover,.content .right .tab a.current { background:#eee; color:#333; }
+.content .right .tab button{ border:0; background:url(../images/close.png) no-repeat; height:19px; width:19px; display:inline-block; margin-left:15px; cursor:pointer; outline:none; }
+.content .right .tab .menuClose{ position:absolute; right:2px;top:11px;  background-image:url(../images/close.png) ; height:19px; width:19px; display: block; background-position: 0 0 ; background-repeat: no-repeat; background-color: #eee; }
+
+
+
+
+
+.indexes{ background: #92b965; margin-top:50px; padding:20px 0;}
+.indexes .rightlogo{margin-bottom: 20px;}
+.indexes .indexesList{ width:88%; margin: 20px auto 0 auto; padding-bottom: 20px; }
+.indexes .indexesList dl{border-radius: 10px; overflow:hidden; width: 13%; float: left; }
+.indexes .indexesList dl dt{background: #5f8a2e; display: block; text-align: center; color: #fff; height: 40px; line-height: 40px;}
+.indexes .indexesList dl dt a{ color: #fff; font-size: 16px;}
+.indexes .indexesList dl dd{background: #fff; padding-bottom: 5px; }
+.indexes .indexesList dl dd a{ color: #333; border-bottom: 1px dashed #ddd; display: block; padding:5px;}
+.indexes .indexesList dl dd a:hover{ background: #eaf8da; color: #5f8a2e;}
+.indexes .indexesList .arrow-right{ width:40px; margin-top:10px; text-align: center;}
+
+
+
+
+
+.processing{ padding-top:100px;}
+.processing ul{width:90%; margin: 20px auto 0 auto;}
+.processing ul li{float: left; margin:0 5px;}
+.processing ul li span{font-size: 12px; color:#ddd;}
+.processing ul li a{ border-radius: 5px; background: #f2ffe4; display: block; padding:20px 10px 0 10px; text-align: center; vertical-align: middle; overflow: hidden; height: 100px; font-size: 15px; width: 100px; color: #608327;}
+.processing ul li a:hover{  background: #fff; color: #385508;}
+.processing ul li a img{margin-bottom: 6px;}
+.processing ul .arrow-left{padding-top: 36px;}
+
+
+
+
+
+/*基本资料*/
+.aboutus-content{ margin-left: 15px; padding-top:20px;}
+.aboutus-content dl{ margin-bottom: 25px;}
+.aboutus-content dt{ margin-right: 15px;}
+.aboutus-content dd .col-lg-4{width: 30%; float: left;}
+.aboutus-content dd h1{ font-size: 20px; color: #69a54c;}
+.aboutus-content dd h1 span{ font-size: 18px; color: #666; font-weight: 500;}
+.aboutus-content dd .aboutusList{color: #333; margin-top:15px; }
+.aboutus-content dd .aboutusList label{font-weight: 500; color: #666; margin-right: 5px;}
+.aboutus-content dd h5{ font-size: 15px; color: #69a54c; margin-top:10px;}
+.aboutus-content .title{ background: #eee; line-height: 35px; overflow: hidden; height: 35px; width: 100%;}
+.aboutus-content .title h4{ background: #5a973c; color: #fff; padding:0 20px; line-height: 35px; font-size: 15px;}
+.aboutus-content .company{ margin-top:20px; margin-bottom: 20px;}
+.aboutus-content .companySub{ border:1px solid #ddd; width: 250px; margin-right: 20px;}
+.aboutus-content .companySub ul{ width: 100%; display: table;}
+.aboutus-content .companySub ul li{ display: table-cell; height: 30px; line-height: 30px; text-align: center; background: #eee; }
+.aboutus-content a{ color:#333;}
+.aboutus-content a:hover{ color:#f60;}
+.aboutus-content .companySub ul li:hover,.aboutus-content .companySub ul li.current{ background: #fff;  }
+.aboutus-content .companyShow{ line-height: 180%; color: #333;}
+.aboutus-content .companyList{ text-align: center; padding:10px 0; font-size: 14px;}
+.aboutus-content .honorList{ padding:10px 0;}
+.aboutus-content .honorList ul{}
+.aboutus-content .honorList ul li{ float: left; display: block; border:1px solid #ddd; padding:4px; margin-right: 8px;}
+.aboutus-content .honorList ul li:hover{ border:1px solid #f60;}
+.aboutus-content .mapList{ padding:10px 0;}
+
+
+
+
+
+
+
+
+/*知识库*/
+.knowledge{ padding: 100px 0;}
+.knowledge .indexesList{ width:95%; margin: 20px auto 0 auto;}
+.knowledge .indexesList dl{border-radius: 10px; overflow:hidden; width: 21%; margin-right: 20px; float: left;  -webkit-box-shadow:0 0 2px #42741f; -moz-box-shadow:0 0 2px #42741f; box-shadow:0 0 2px #42741f;  }
+.knowledge .indexesList dl dt{background: #4d8635; display: block; overflow:hidden;  color: #fff; height: 40px; line-height: 40px;}
+.knowledge .indexesList dl dt a{ color: #fff; font-size: 14px;}
+.knowledge .indexesList dl dd{background: #f2ffe4; padding-bottom: 5px; }
+.knowledge .indexesList dl dd a{ width:90%; margin:0 auto; color: #333; border-bottom: 1px dashed #ddd; display: block; padding:10px 5px; font-size: 13px;}
+.knowledge .indexesList dl dd a:hover{ background: #eaf8da; color: #5f8a2e;}
+
+
+.k-icon1{ background-image:url(../images/k-icon1.png); background-repeat:no-repeat; width:100%; display:block; float:left; text-indent:50px; background-position:15px 6px; background-size: 30px 33px;  }
+.k-icon2{ background-image:url(../images/k-icon2.png); background-repeat:no-repeat; width:100%; display:block; float:left; text-indent:50px; background-position:15px 6px; background-size: 30px 33px;  }
+.k-icon3{ background-image:url(../images/k-icon3.png); background-repeat:no-repeat; width:100%; display:block; float:left; text-indent:50px; background-position:15px 6px; background-size: 30px 33px;  }
+.k-icon4{ background-image:url(../images/k-icon4.png); background-repeat:no-repeat; width:100%; display:block; float:left; text-indent:50px; background-position:15px 6px; background-size: 30px 33px;  }
+
+
+
+
+/*监管者*/
+.supervision{ margin-left: 15px; padding-top:20px;}
+.supervision .title{ background: #eee; line-height: 35px; overflow: hidden; height: 35px;}
+.supervision .title h4{ background: #5a973c; color: #fff; padding:0 20px; line-height: 35px; font-size: 15px;}
+
+.supervision .supervision-date{}
+.supervision .supervision-date ul { margin-top:15px;}
+.supervision .supervision-date ul li{ padding-top:20px; float: left; margin-right: 15px; text-align: center; font-size: 15px;}
+.supervision .supervision-date ul li a{color: #fff; font-size:13px;  }
+.supervision .supervision-date .cricle-bg1{ background-image: url("../images/cricle1.gif") ; background-size: 90px 90px; background-repeat: no-repeat; width: 90px; height: 90px;}
+.supervision .supervision-date .cricle-bg2{ background-image: url("../images/cricle2.gif") ; background-size: 90px 90px; background-repeat: no-repeat;  width: 90px; height: 90px;}
+.supervision .supervision-date .cricle-bg3{ background-image: url("../images/cricle3.gif") ; background-size: 90px 90px; background-repeat: no-repeat;  width: 90px; height: 90px;}
+.supervision .supervision-date .cricle-bg4{ background-image: url("../images/cricle4.gif") ; background-size: 90px 90px; background-repeat: no-repeat;  width: 90px; height: 90px;}
+.supervision .supervision-date .cricle-bg5{ background-image: url("../images/cricle5.gif") ; background-size: 90px 90px; background-repeat: no-repeat;  width: 90px; height: 90px;}
+.supervision .supervision-date .cricle-bg6{ background-image: url("../images/cricle6.gif") ; background-size: 90px 90px; background-repeat: no-repeat;  width: 90px; height: 90px;}
+.supervision .supervision-date .cricle-bg7{ background-image: url("../images/cricle7.gif") ; background-size: 90px 90px; background-repeat: no-repeat;  width: 90px; height: 90px;}
+
+
+.supervision-content{ margin-top:20px; }
+.supervision-content .supervision-list{ border:1px solid #ddd; border-radius: 5px 5px 0 0; overflow: hidden; width: 48%; margin-right: 15px;  margin-bottom:10px;}
+.supervision-content .supervision-list h5{ color: #fff; font-size: 14px; background: #80b566; height: 35px; line-height: 35px;  }
+.supervision-content .supervision-list h5 a{ color: #529e2c; background: #e6f5de; border-radius: 2px; padding: 0px 3px;  margin-right: 10px; }
+.supervision-content .arrow-r{ background-image:url(../images/arrow4.png); background-repeat:no-repeat; display:block; float:left; text-indent:40px; background-position:15px 10px; background-size: 15px 15px;  }
+.supervision-content .list{padding:10px;}
+.supervision-content .list ol li{ border-bottom: 1px dashed #e3e3e3; height:24px; line-height:24px; background:url(../images/marking.gif) no-repeat 0 14px; display:block; text-indent:9px; text-align:left; width:100%; margin:0 auto; overflow:hidden; }
+.supervision-content .list ol li span{float:right; color:#999;}
+.supervision-content .list ol li a{font-size:12px; color:#333;}
+.supervision-content .list ol li a:hover{font-size:12px; color:#ff6600;}
+
+
+.examine{ display: table; width: 100%; margin-top:15px;}
+.examine dl{ display: table-cell;  padding:10px; }
+.examine dl:Hover{ background:#6b9e52; cursor: pointer;}
+
+.examine dl dt{ margin-right: 15px; }
+.examine dl dd{ font-size: 14px; color: #fff; line-height: 180%;}
+.examine dl dd a{ font-size: 20px; color: #ffff00; font-weight: 700; margin:0 4px; }
+.examine .green-bg1{ background: #8dc173; }
+.examine .green-bg2{ background: #80b566; }
+.examine .green-bg3{ background: #6daa4f; }
+.examine .green-bg4{ background: #64a246; }
+
+
+
+
+
+

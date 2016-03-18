@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="SysRole2User" mainattr="AUTOREC_ID">
+    <mapingenty type="table">ZZ_USERROLE</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="AUTOREC_ID" maxlength="10" datatype="Long" type="PK">
+        <mapingcol datatype="NUMBER">AUTOREC_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="USERID" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">USERID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ROLEID" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">ROLEID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

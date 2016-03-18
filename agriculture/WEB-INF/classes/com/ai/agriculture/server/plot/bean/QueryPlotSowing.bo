@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="QueryPlotSowing" mainattr="PLANTLOT_ID">
+    <mapingenty type="query">select t1.plantlot_id,
+       t1.lot_no,
+       t1.goods_id,
+       t1.goods_name,
+       t2.plot_no,
+       t3.cofarmer_id,
+       t3.cofarmer_name,
+       t4.plotoper_id,
+       t4.create_user,
+       t4.operate_date,
+       t4.operators,
+       t4.notes
+  from PlantLot t1 LEFT JOIN plot t2 ON t1.plot_id = t2.plot_id LEFT JOIN  CoFarmer t3 ON t1.cofarmer_id = t3.cofarmer_id LEFT JOIN plotsowing t4
+ ON t1.plantlot_id = t4.plantlot_id</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="PLANTLOT_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">PLANTLOT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOT_NO" maxlength="256" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">LOT_NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODS_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">GOODS_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODS_NAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">GOODS_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PLOT_NO" maxlength="20" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PLOT_NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">COFARMER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_NAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">COFARMER_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PLOTOPER_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">PLOTOPER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_USER" maxlength="256" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CREATE_USER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATE_DATE" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">OPERATE_DATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATORS" maxlength="256" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">OPERATORS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="NOTES" maxlength="4000" type="COL">
+        <mapingcol datatype="CLOB">NOTES</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

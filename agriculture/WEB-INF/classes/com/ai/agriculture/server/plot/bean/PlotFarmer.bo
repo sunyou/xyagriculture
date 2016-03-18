@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="PlotFarmer" mainattr="PLOT_ID">
+    <mapingenty type="query">select t1.*,t2.farmer_name from plot t1,farmer t2 where t1.farmer_id=t2.farmer_id</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="PLOT_ID" maxlength="36" datatype="String" type="PK">
+        <mapingcol datatype="VARCHAR2">PLOT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AREA_ID" maxlength="12" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">AREA_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PLOT_NO" maxlength="20" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PLOT_NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PLOT_NAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PLOT_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PYSHORT" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PYSHORT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">COFARMER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="FARMER_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">FARMER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="FACILITIES" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">FACILITIES</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ISACTIVE" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">ISACTIVE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_USER" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CREATE_USER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_TIME" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">CREATE_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MODIFIED_USER" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">MODIFIED_USER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MODIFIED_TIME" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">MODIFIED_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STATE" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">STATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DISPLAYNAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">DISPLAYNAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PLANTBASE_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PLANTBASE_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AREAS" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">AREAS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AREA_DET" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">AREA_DET</mapingcol>
+      </attr>
+      <attr floatlength="0" name="NOTES" maxlength="500" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">NOTES</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PLOTENVIRONMENT" maxlength="500" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PLOTENVIRONMENT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="FARMER_NAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">FARMER_NAME</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

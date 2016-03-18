@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="Inquiry" mainattr="ID">
+    <mapingenty type="table">INQUIRY</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="ID" maxlength="72" datatype="String" type="PK">
+        <mapingcol datatype="CHAR">ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OBJECT_ID" maxlength="72" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">OBJECT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="INQUIRY_TYPE" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">INQUIRY_TYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_ID" maxlength="72" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">COFARMER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATORS" maxlength="64" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">OPERATORS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATE_DATE" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">OPERATE_DATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REASON" maxlength="4000" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">REASON</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="RESPERSON" maxlength="4000" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">RESPERSON</mapingcol>
+      </attr>
+      <attr floatlength="0" name="RESDATE" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">RESDATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="RESNOTE" maxlength="4000" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">RESNOTE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ISACTIVE" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">ISACTIVE</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

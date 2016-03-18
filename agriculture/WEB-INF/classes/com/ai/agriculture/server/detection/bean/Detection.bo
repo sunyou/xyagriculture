@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="Detection" mainattr="DETECTION_UID">
+    <mapingenty type="table">DETECTION</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="DETECTION_UID" maxlength="72" datatype="String" type="PK">
+        <mapingcol datatype="CHAR">DETECTION_UID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DETECTION_NO" maxlength="240" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">DETECTION_NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DETECTION_DATE" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">DETECTION_DATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_ID" maxlength="72" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">COFARMER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="HARVEST_UID" maxlength="72" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">HARVEST_UID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TYPE_ID" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">TYPE_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="RESULT" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">RESULT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ACCRODING" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">ACCRODING</mapingcol>
+      </attr>
+      <attr floatlength="0" name="METHOD" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">METHOD</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DETECTOR" maxlength="512" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">DETECTOR</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PLANTLOT_ID" maxlength="72" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">PLANTLOT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="IMGSRC" maxlength="512" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">IMGSRC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DEPT_ID" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">DEPT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DETECTPRO" maxlength="1024" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">DETECTPRO</mapingcol>
+      </attr>
+      <attr floatlength="2" name="AMOUNT" maxlength="38" datatype="Float" type="COL">
+        <mapingcol datatype="NUMBER">AMOUNT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DOCFILEPATH" maxlength="4000" type="COL" datatype="String">
+        <mapingcol datatype="VARCHAR2">DOCFILEPATH</mapingcol>
+      </attr>
+      <attr floatlength="0" name="YZL" maxlength="1024" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">YZL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="YZLRANGE" maxlength="4000" type="COL" datatype="String">
+        <mapingcol datatype="VARCHAR2">YZLRANGE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STANDRAD" maxlength="1024" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">STANDRAD</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="VLabelNote" mainattr="AUTO_ID">
+    <mapingenty type="query">select t1.*,t2.Label_No from LabelNote t1 left join Label_Print t2 on t1.Label_ID=t2.Print_UID</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="AUTO_ID" maxlength="36" datatype="String" type="PK">
+        <mapingcol datatype="CHAR">AUTO_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">COFARMER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LABEL_ID" maxlength="120" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">LABEL_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="NOTES" maxlength="4000" type="COL">
+        <mapingcol datatype="CLOB">NOTES</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LABEL_NO" maxlength="256" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">LABEL_NO</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="PlantBase" mainattr="PLANTBASES_UID">
+    <mapingenty type="table">PLANTBASES</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="PLANTBASES_UID" maxlength="72" datatype="String" type="PK">
+        <mapingcol datatype="CHAR">PLANTBASES_UID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PLANTBASES_NAME" maxlength="100" datatype="String" type="COL" remark="基地名称">
+        <mapingcol datatype="VARCHAR2">PLANTBASES_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PLANTBASES_NO" maxlength="100" datatype="String" type="COL" remark="基地编号">
+        <mapingcol datatype="VARCHAR2">PLANTBASES_NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PYSHORT" maxlength="100" datatype="String" type="COL" remark="拼音缩写">
+        <mapingcol datatype="VARCHAR2">PYSHORT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AREA_ID" maxlength="24" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">AREA_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_ID" maxlength="72" datatype="String" type="COL" remark="合作社ID">
+        <mapingcol datatype="CHAR">COFARMER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PLOTENVIRONMENT" maxlength="20" datatype="String" type="COL" remark="基地环境情况">
+        <mapingcol datatype="CLOB">PLOTENVIRONMENT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="NOTES" maxlength="20" datatype="String" type="COL">
+        <mapingcol datatype="CLOB">NOTES</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ISACTIVE" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">ISACTIVE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DOCFILESRC" maxlength="20" datatype="String" type="COL">
+        <mapingcol datatype="CLOB">DOCFILESRC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CONTACTS" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CONTACTS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TEL" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">TEL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DETAILADDR" maxlength="20" datatype="String" type="COL" remark="具体地址">
+        <mapingcol datatype="CLOB">DETAILADDR</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PROVINCE_AID" maxlength="24" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PROVINCE_AID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CITY_AID" maxlength="24" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CITY_AID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COUNTY_AID" maxlength="24" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">COUNTY_AID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TOWN_AID" maxlength="24" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">TOWN_AID</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

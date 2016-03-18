@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="PlotHarvestPlotChart" mainattr="GOODS_NAME">
+    <mapingenty type="query">select t2.Goods_Name, SUM(Qty) AS Qty
+  from PLotHarvest t1
+  left join Goods t2
+    on t2.Goods_ID = t1.Goods_ID
+ group by Goods_Name</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="GOODS_NAME" maxlength="50" datatype="String" type="PK">
+        <mapingcol datatype="VARCHAR2">GOODS_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="QTY" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">QTY</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

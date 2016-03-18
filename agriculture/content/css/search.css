@@ -1,0 +1,82 @@
+@charset "utf-8";
+*{
+	margin: 0px;
+	padding: 0px;
+}
+#searchForm, #searchBox {
+	width: 420px;
+	list-style-type: none;
+	overflow: hidden;
+}
+#searchBox li {
+	width: 420px;
+	height: 45px;
+	line-height: 45px;
+	clear: both;
+}
+#searchBox li .PLotHarvest_No {
+	border: 1px solid #B8B8B8;
+	color: #B8B8B8;
+	font-size: 22px;
+	font-weight: bold;
+	height: 30px;
+	line-height: 30px;
+	width: 380px;
+}
+.sz_btn {
+	float: left;
+	margin-right: 38px;
+	*margin-right: 35px;
+	display: block;
+	background: url("images/search_btn_bg.jpg") no-repeat scroll 0 0 transparent;
+	border: medium none;
+	color: #FFF;
+	cursor: pointer;
+	display: block;
+	font-weight: bold;
+	font-size: 18px;
+	height: 31px;
+	width: 31px;
+	overflow: hidden;
+	text-decoration: none;
+}
+.in_btn {
+	height: 31px;
+	width: 31px;
+	border: none;
+	background: transparent;
+}
+.btn_pic {
+	background: url("images/search_btn_bg.jpg") no-repeat scroll 0 0 transparent;
+}
+.sz_btn:hover {
+	background-position: -31px 0;
+	color: #46484D;
+}
+#btnCenter {
+	padding-left: 150px;
+}
+.in_pic {
+	height: 30px;
+	line-height: 30px;
+	width: 79px;
+	border: none;
+	background: transparent;
+}
+.btn_pic {
+	background-position: 0 -32px;
+	text-decoration: none;
+	font-weight: bold;
+	height: 30px;
+	line-height: 30px;
+	width: 79px;
+	display: block;
+	overflow: hidden;
+}
+.btn_pic:hover {
+	background: #F3A120;
+	color: #46484D;
+	height: 30px;
+	line-height: 30px;
+	width: 79px;
+}

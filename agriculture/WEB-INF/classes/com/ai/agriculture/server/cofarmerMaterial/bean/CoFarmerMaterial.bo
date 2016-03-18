@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="CoFarmerMaterial" mainattr="COMAT_UID">
+    <mapingenty type="table">COFARMERMATERIAL</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="COMAT_UID" maxlength="72" datatype="String" type="PK">
+        <mapingcol datatype="CHAR">COMAT_UID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_ID" maxlength="72" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">COFARMER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OBJECT_ID" maxlength="72" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">OBJECT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OBJECT_NAME" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">OBJECT_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CMTYPE" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">CMTYPE</mapingcol>
+      </attr>
+      <attr floatlength="2" name="QTY" maxlength="38" datatype="Float" type="COL">
+        <mapingcol datatype="NUMBER">QTY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="UNITID" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">UNITID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SUPPLIER_ID" maxlength="72" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">SUPPLIER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SUPPLIER_NAME" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">SUPPLIER_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PRODUCE_NAME" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PRODUCE_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATEDATE" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">OPERATEDATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATEUSER" maxlength="64" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">OPERATEUSER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DOCFILESRC" maxlength="512" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">DOCFILESRC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERID" maxlength="72" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">OPERID</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

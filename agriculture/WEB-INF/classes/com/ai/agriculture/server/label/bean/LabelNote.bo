@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="LabelNote" mainattr="AUTO_ID">
+    <mapingenty type="table">LABELNOTE</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="AUTO_ID" maxlength="72" datatype="String" type="PK">
+        <mapingcol datatype="CHAR">AUTO_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_ID" maxlength="72" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">COFARMER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LABEL_ID" maxlength="240" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">LABEL_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="NOTES" maxlength="20" type="COL" datatype="String">
+        <mapingcol datatype="CLOB">NOTES</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

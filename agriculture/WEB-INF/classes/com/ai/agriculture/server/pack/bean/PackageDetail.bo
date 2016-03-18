@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="PackageDetail" mainattr="PACKAGE_UID">
+    <mapingenty type="table">PACKAGE_DETAIL</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="DETAIL_UID" maxlength="72" datatype="String" type="PK" remark="主键">
+        <mapingcol datatype="CHAR">DETAIL_UID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PACKAGE_UID" maxlength="72" datatype="String" type="COL" remark="包装id，PACKAGE表PACKAGE_UID">
+        <mapingcol datatype="CHAR">PACKAGE_UID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="HARVESTOPERATE_ID" maxlength="72" datatype="String" type="COL" remark="采收，PLotHarvest表PLotOper_ID">
+        <mapingcol datatype="CHAR">HARVESTOPERATE_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="QTY" maxlength="10" datatype="Long" type="COL" remark="数量">
+        <mapingcol datatype="NUMBER">QTY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATEUSER" maxlength="32" datatype="String" type="COL" remark="操作人">
+        <mapingcol datatype="VARCHAR2">OPERATEUSER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="UNITID" maxlength="10" datatype="Long" type="COL" remark="单位id,表unitsUNITID">
+        <mapingcol datatype="NUMBER">UNITID</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

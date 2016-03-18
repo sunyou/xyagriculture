@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="IgDeliver" mainattr="DELIVERID">
+    <mapingenty type="table">ig_deliver</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="DELIVERID" maxlength="36" datatype="String" type="PK">
+        <mapingcol datatype="VARCHAR">DELIVERID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DELIVERNO" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">DELIVERNO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATEDATE" maxlength="0" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATETIME">OPERATEDATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CARID" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="DECIMAL">CARID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DRIVERID" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="DECIMAL">DRIVERID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="RESELLERID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">RESELLERID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DELAMOUNT" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="DECIMAL">DELAMOUNT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DELDATE" maxlength="0" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATETIME">DELDATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="RECDATE" maxlength="0" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATETIME">RECDATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DELADD" maxlength="0" datatype="String" type="COL">
+        <mapingcol datatype="TEXT">DELADD</mapingcol>
+      </attr>
+      <attr floatlength="0" name="RECADD" maxlength="0" datatype="String" type="COL">
+        <mapingcol datatype="TEXT">RECADD</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DELSTATE" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="DECIMAL">DELSTATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REMARK" maxlength="0" datatype="String" type="COL">
+        <mapingcol datatype="TEXT">REMARK</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="0" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATETIME">TIMESTAMP</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

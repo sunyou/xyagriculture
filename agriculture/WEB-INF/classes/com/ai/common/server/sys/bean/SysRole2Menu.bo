@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="SysRole2Menu" mainattr="ROLE_ID">
+    <mapingenty type="table">ZZ_ROLE2MENU</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="ROLE_ID" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">ROLE_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MENU_ID" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">MENU_ID</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

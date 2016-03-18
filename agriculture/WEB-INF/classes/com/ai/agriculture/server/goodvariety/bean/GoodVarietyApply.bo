@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="GoodVarietyApply" mainattr="APPLYGOODSVARIETY_ID">
+    <mapingenty type="table">GOODSVARIETYAPPLY</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="APPLYGOODSVARIETY_ID" maxlength="72" datatype="String" type="PK">
+        <mapingcol datatype="CHAR">APPLYGOODSVARIETY_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="APPLY_DATE" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">APPLY_DATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="APPLY_USER" maxlength="512" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">APPLY_USER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODVARIETY_ID" maxlength="72" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">GOODVARIETY_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODVARIANT_NAME" maxlength="512" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">GOODVARIANT_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PYSHORT" maxlength="512" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PYSHORT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CERTIFICATE_ID" maxlength="512" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CERTIFICATE_ID</mapingcol>
+      </attr>
+      <attr floatlength="2" name="EMERGENCERATE" maxlength="38" datatype="Float" type="COL">
+        <mapingcol datatype="NUMBER">EMERGENCERATE</mapingcol>
+      </attr>
+      <attr floatlength="2" name="SEEDINGAGE" maxlength="38" datatype="Float" type="COL">
+        <mapingcol datatype="NUMBER">SEEDINGAGE</mapingcol>
+      </attr>
+      <attr floatlength="2" name="SURVIVALRATE" maxlength="38" datatype="Float" type="COL">
+        <mapingcol datatype="NUMBER">SURVIVALRATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PRATIQUE" maxlength="512" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PRATIQUE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORIGIN" maxlength="512" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORIGIN</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODS_ID" maxlength="72" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">GOODS_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SUPPLIER_ID" maxlength="72" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">SUPPLIER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AUDIT_DATE" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">AUDIT_DATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AUDIT_RESULT" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">AUDIT_RESULT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ISACTIVE" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">ISACTIVE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_USER" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CREATE_USER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_TIME" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">CREATE_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MODIFIED_USER" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">MODIFIED_USER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MODIFIED_TIME" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">MODIFIED_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="APPLY_TYPE" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">APPLY_TYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AUDITUSER_ID" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">AUDITUSER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PRODUCER" maxlength="1024" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PRODUCER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REJECTREASON" maxlength="1000" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">REJECTREASON</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REMARK" maxlength="1000" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">REMARK</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

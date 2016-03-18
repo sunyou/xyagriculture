@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="QueryStoreHouse" mainattr="SH_ID">
+    <mapingenty type="query">SELECT T1.*,T2.CoFarmer_Name FROM StoreHouse T1 LEFT JOIN CoFarmer T2 ON T1.CoFarmer_ID=T2.CoFarmer_ID</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="SH_ID" maxlength="36" datatype="String" type="PK">
+        <mapingcol datatype="VARCHAR">SH_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SH_NAME" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">SH_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">COFARMER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TEM" maxlength="40" datatype="Long" type="COL">
+        <mapingcol datatype="DECIMAL">TEM</mapingcol>
+      </attr>
+      <attr floatlength="0" name="HUM" maxlength="40" datatype="Long" type="COL">
+        <mapingcol datatype="DECIMAL">HUM</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PRES" maxlength="40" datatype="Long" type="COL">
+        <mapingcol datatype="DECIMAL">PRES</mapingcol>
+      </attr>
+      <attr floatlength="0" name="BEAM" maxlength="40" datatype="Long" type="COL">
+        <mapingcol datatype="DECIMAL">BEAM</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AMOUT" maxlength="40" datatype="Long" type="COL">
+        <mapingcol datatype="DECIMAL">AMOUT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATER" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">OPERATER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ISACTIVE" maxlength="11" datatype="Long" type="COL">
+        <mapingcol datatype="DECIMAL">ISACTIVE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="19" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATETIME">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REMARK" maxlength="21845" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">REMARK</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_NAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">COFARMER_NAME</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

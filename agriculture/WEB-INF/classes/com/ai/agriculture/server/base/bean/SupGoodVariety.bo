@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="SupGoodVariety" mainattr="AUTORECID">
+    <mapingenty type="table">SUPGOODVARIETY</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="AUTORECID" maxlength="10" datatype="Long" type="PK">
+        <mapingcol datatype="NUMBER">AUTORECID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SUPPLIER_ID" maxlength="72" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">SUPPLIER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODVARIETY_ID" maxlength="72" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">GOODVARIETY_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODSTYPE" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">GOODSTYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODS_ID" maxlength="72" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">GOODS_ID</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

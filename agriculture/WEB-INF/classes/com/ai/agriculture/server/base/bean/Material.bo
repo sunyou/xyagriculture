@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="Material" mainattr="MATERIAL_ID">
+    <mapingenty type="table">MATERIAL</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="MATERIAL_ID" maxlength="72" datatype="String" type="PK">
+        <mapingcol datatype="CHAR">MATERIAL_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CATEGORY_ID" maxlength="72" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">CATEGORY_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MATERIALTYPE_CODE" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">MATERIALTYPE_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MATERIAL_NO" maxlength="40" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">MATERIAL_NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MATERIAL_NAME" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">MATERIAL_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PYSHORT" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PYSHORT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COMMONNAME" maxlength="512" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">COMMONNAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SPECIFICATION" maxlength="512" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">SPECIFICATION</mapingcol>
+      </attr>
+      <attr floatlength="0" name="USABLERANGE" maxlength="512" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">USABLERANGE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MAINCOMPONENT" maxlength="512" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">MAINCOMPONENT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DOSETYPE" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">DOSETYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="USAGE" maxlength="512" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">USAGE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="UNIT" maxlength="72" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">UNIT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COMPOSITEDAYS" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">COMPOSITEDAYS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="NOTES" maxlength="4000" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">NOTES</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ISACTIVE" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">ISACTIVE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="IMAGEURL" maxlength="512" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">IMAGEURL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PRICE" maxlength="64" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PRICE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PRODUCER" maxlength="1024" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PRODUCER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PRODUCE_NO" maxlength="512" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PRODUCE_NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SUITABLEGOODS" maxlength="512" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">SUITABLEGOODS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ISPUBLIC" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">ISPUBLIC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_ID" maxlength="72" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">COFARMER_ID</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

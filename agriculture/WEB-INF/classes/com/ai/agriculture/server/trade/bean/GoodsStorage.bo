@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="GoodsStorage" mainattr="PLOTOPER_ID">
+    <mapingenty type="table">goodsstorage</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="PLOTOPER_ID" maxlength="36" datatype="String" type="PK">
+        <mapingcol datatype="CHAR">PLOTOPER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATETYPE_CODE" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="DECIMAL">OPERATETYPE_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">COFARMER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODS_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">GOODS_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="HARVESTOPERATE_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">HARVESTOPERATE_ID</mapingcol>
+      </attr>
+      <attr floatlength="2" name="TEM" maxlength="38" datatype="Float" type="COL">
+        <mapingcol datatype="DECIMAL">TEM</mapingcol>
+      </attr>
+      <attr floatlength="2" name="HUM" maxlength="38" datatype="Float" type="COL">
+        <mapingcol datatype="DECIMAL">HUM</mapingcol>
+      </attr>
+      <attr floatlength="2" name="PRES" maxlength="38" datatype="Float" type="COL">
+        <mapingcol datatype="DECIMAL">PRES</mapingcol>
+      </attr>
+      <attr floatlength="2" name="BEAM" maxlength="38" datatype="Float" type="COL">
+        <mapingcol datatype="DECIMAL">BEAM</mapingcol>
+      </attr>
+      <attr floatlength="2" name="DAYS" maxlength="38" datatype="Float" type="COL">
+        <mapingcol datatype="DECIMAL">DAYS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STYPE" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="DECIMAL">STYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERDATE" maxlength="0" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATETIME">OPERDATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATER" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">OPERATER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="0" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATETIME">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SH_ID" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">SH_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REMARK" maxlength="0" datatype="String" type="COL">
+        <mapingcol datatype="TEXT">REMARK</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

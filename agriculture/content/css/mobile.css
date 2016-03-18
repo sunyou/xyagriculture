@@ -1,0 +1,149 @@
+@charset "utf-8";
+body,html{background:#fff;}
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend{margin:0;padding:0;}
+body,button,input,select,textarea{ font-family: arial,"Microsoft Yahei","Hiragino Sans GB",sans-serif; font-size: 62.5%;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+ul,ol,dl{list-style:none;}
+a{text-decoration:none;}
+a:hover{ text-decoration: none;}
+.fl{ float:left; }
+.fr{ float:right;}
+.clear{ clear:both;}
+.input20{ width:20px; height:20px; vertical-align:middle;}
+.ash{ color:#c0c0c0;}
+.666{ color:#666;}
+.f60{ color:#f60;}
+.999{ color:#999;}
+input,button{ outline:none; }
+button{ cursor:pointer;}
+.font-18{ font-size: 1.8rem;}
+
+.m-t-10{ margin-top:10px;}
+.m-t-15{ margin-top:15px;}
+.m-t-20{ margin-top:20px;}
+.m-t-30{ margin-top:30px;}
+.m-t-89{ margin-top:52px;}
+.m-t-100{ margin-top:68px;}
+.m-t-150{ margin-top:150px;}
+.m-b-100{ margin-bottom:100px;}
+.m-l-10{ margin-left: 10px;}
+.p-t-150{ padding-top:150px;}
+.p-b-100{ padding-bottom:100px;}
+.w-b-1{ width:10%;}
+.w-b-2{ width:24%;}
+.w-b-24{ width:24%;}
+.w-b-3{ width:30%;}
+.w-b-32{ width:32%;}
+.w-b-4{ width:40%;}
+.w-b-5{ width:50%;}
+.w-b-6{ width:60%;}
+.w-b-7{ width:70%;}
+.w-b-8{ width:80%;}
+.w-b-9{ width:90%;}
+.w-b-10{ width:100%;}
+.h-50{height: 50px;}
+.h-60{height: 60px;}
+.h-70{height: 70px;}
+.h-80{height: 80px;}
+.h-90{height: 90px;}
+.h-100{height: 100px;}
+.h-110{height: 110px;}
+.h-120{height: 120px;}
+.hidden{ display: none; height: 0; width: 0;font-size: 0;}
+
+
+.b-c-orage{ background: #d60;}
+.b-c-violet{ background: #9666c2;}
+.b-c-green{ background: #98d56e;}
+.b-c-blue{ background: #37b6c9;}
+.b-c-red{ background: #e75350;}
+.b-c-lightBlue{ background: #3778c9;}
+
+.bg-color-blue{background: #528bdf; color: #fff;}
+.bg-color-orange{background: #f0832b; color: #fff;}
+.bg-color-green{background: #4daf2f; color: #fff;}
+.bg-color-violet{background: #d058bb; color: #fff;}
+
+.t-blue{ color: #6292d6;}
+.t-orange{ color: #f0832b;}
+.t-grey{ color: #999;}
+.t-333{ color: #333;}
+
+
+
+
+.enter-btn{ width: 95%; margin:0 auto ; padding: 10px 0;}
+.enter-btn .btn{font-size: 2.2rem; background: #f0832b; border:1px solid #f0832b;}
+
+
+
+
+
+/*业务进度*/
+
+
+/*车客流量*/
+.progress-list{  }
+.progress-list h3{ background: #80b566; margin:2px auto 2px auto; font-weight:500; color:#fff; line-height:35px; width:100%; font-size: 16px; text-indent: 20px; }
+.progress-list h3 a{ color:#fff; }
+.progress-list h3 i{margin-top:10px; margin-right:10px; }
+
+.progress-list dl{ width:85%; margin:0 auto; font-size:20px; }
+.border_right{border-left:2px solid #ddd; }
+
+.p_b_80{ padding-bottom:80px;}
+.orange_bg{ background:#f60;}
+.green_bg{ background:#80b566;}
+.grey_bg{ background:#bbb;}
+
+.font_color_blue{ color:#30abf3;}
+.font_color_red{ color:#ff0000;}
+.font_color_yellow{ color:#ffba00;}
+.font_color_green{ color:#80b566;}
+.font_color_orange{ color:#f60;}
+.font_color_white{ color:#fff;}
+
+.progress-list dl dt{ float:left; margin-left:-20px; display: block;  height:35px;width:35px; text-align:center; line-height:35px; border-radius: 50%;}
+.progress-list dl dt i{ color:#fff;}
+
+.progress-list dl dd{ float:left; width:88%; margin-left:10px; margin-bottom:10px; line-height:150%;  ; font-size:1.3rem; border-bottom: 1px dashed #ddd;}
+.progress-list dl dd h5{ font-weight:500; font-size:20px; color:#fff; height:20px; padding:5px 10px; border-radius:5px; text-indent:10px; margin-bottom:10px;}
+.progress-list ul{ font-size:1.4rem; display:table; width:100%;}
+.progress-list ul li{ float:left; display:table-cell; width:25%; text-align:center; border-bottom:1px solid #ddd; padding:5px 0 10px 0 ; }
+
+
+/*产品二维码详情*/
+.prod-progress-list{}
+.prod-progress-list h3{ background: #80b566; margin:2px auto 2px auto; font-weight:500; color:#fff; line-height:35px; width:100%; font-size: 16px; text-indent: 20px; }
+.prod-progress-list ul{width:100%; padding-bottom:10px; margin:0 auto; }
+.prod-progress-list ul li span{ width:80px; text-align:right; display:inline-block; color:#888; margin-right:10px;}
+.prod-progress-list ul li{ border-bottom:1px solid #ddd; height:3rem; line-height:3rem; font-size:1.4rem;}
+.prod-progress-list ul li a{ color:#666; display:block; width:98%; margin:0 auto; }
+.prod-progress-list ul li:hover{ background:#eee;}
+.prod-progress-list ol{ width:95%; padding-top:10px; margin:0 auto; }
+.prod-progress-list ol li{ height:3rem; line-height:3rem; width:49%; background:#fff; border-bottom:1px solid #ddd; color:#333; font-size:1.3rem; float: left; }
+.prod-progress-list ol li span{ width:60px; text-align:right; display:inline-block; color:#666; margin-right:10px; }
+
+.prod-progress-list ol a{ color:#333;}
+.prod-progress-list ol li i{ margin-top:10px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

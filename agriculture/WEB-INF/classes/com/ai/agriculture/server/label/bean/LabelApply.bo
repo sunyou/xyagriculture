@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="LabelApply" mainattr="APPLY_ID">
+    <mapingenty type="table">LABELAPPLY</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="APPLY_ID" maxlength="36" datatype="String" type="PK">
+        <mapingcol datatype="VARCHAR2">APPLY_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="APPLY_USER" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">APPLY_USER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="APPLY_DATE" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">APPLY_DATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="APPLY_NO" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">APPLY_NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="APPLY_REMARK" maxlength="20" datatype="String" type="COL">
+        <mapingcol datatype="CLOB">APPLY_REMARK</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">COFARMER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OBJECT_UID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">OBJECT_UID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AMOUNT" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">AMOUNT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AUDIT_RESULT" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">AUDIT_RESULT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AUDITUSER" maxlength="512" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">AUDITUSER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AUDIT_DATE" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">AUDIT_DATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REJECTREASON" maxlength="20" datatype="String" type="COL">
+        <mapingcol datatype="CLOB">REJECTREASON</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PRINTNUM" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">PRINTNUM</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

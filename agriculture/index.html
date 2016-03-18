@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/public.css" rel="stylesheet" type="text/css">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <link href="css/icon.css" rel="stylesheet" type="text/css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script language="javascript" src="js/jquery-1.11.3.js" ></script>
+    <script language="javascript" src="js/bootstrap.min.js" ></script>
+    <script language="javascript" src="js/jquery.placeholder.min.js" ></script>
+    <script type="text/javascript">
+        $(function () {
+            // Invoke the plugin
+            $('input, textarea').placeholder();
+        });
+    </script>
+    <title>农产品溯源管理系统</title>
+</head>
+
+<body>
+<!--header begin-->
+<div class="wrap100 header">
+    <div class="logo"><a href="#"><img src="images/logo1.gif" /></a></div>
+    <!--menu begin-->
+    <div class="menu">
+        <div class="fl"><a href="#"><i class="menu-arrow-left"></i> </a> </div>
+        <ul class="fl">
+            <li><a href="#" class="current">基本资料</a></li>
+            <li><a href="#">三品一标</a></li>
+            <li><a href="#">投入品管理</a></li>
+            <li><a href="#">种植管理</a></li>
+            <li><a href="#">质量检测</a></li>
+            <li><a href="#">加工包装</a></li>
+            <li><a href="#">流通销售</a></li>
+        </ul>
+        <div class="fl"><a href="#"><i class="menu-arrow-right"></i> </a> </div>
+        <div class="cl"></div>
+    </div>
+    <!--menu end-->
+    <!--quickMenu begin-->
+    <div class="quickMenu">
+        <div class="fl loginInfo"><i class="t-icon1" ></i>admin  管理员</div>
+        <div class="fl dropdown nav-item m-t-15">
+            <a class="dropdown-toggle btn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">系统设置<span class="caret"></span></a>
+            <ul class="dropdown-menu checklist dropdown-menu-right" >
+                <li><a href="#">监管部门用户</a></li>
+                <li><a href="#">生产者用户</a></li>
+                <li><a href="#">农资经销商</a></li>
+                <li><a href="#">用户权限</a></li>
+            </ul>
+        </div>
+
+        <div class="fl nav-item nav-item dropdown m-t-15">
+            <a class="dropdown-toggle btn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">后台设置<span class="caret"></span></a>
+            <ul class="dropdown-menu checklist dropdown-menu-right" >
+                <li><a href="#">我的账号</a></li>
+                <li><a href="#">其他用户</a></li>
+                <li><a href="#">报表字段定制</a></li>
+                <li><a href="#">数据接口管理</a></li>
+            </ul>
+        </div>
+        <div class="cl"></div>
+    </div>
+    <!--quickMenu end-->
+
+</div>
+</div>
+<!--header end-->
+
+<div class="wrap100 content">
+
+    <!--left begin-->
+    <div class="fl left">
+        <dl>
+            <h5><a href="#"><i class="l-icon1 current"> 基本资料</i></a></h5>
+            <dt><a href="#" class="left-arrow-right current">我的资料</a></dt>
+            <dt><a href="#" class="left-arrow-right">农户</a> </dt>
+            <dt><a href="#" class="left-arrow-right">技术员</a></dt>
+            <dt><a href="#" class="left-arrow-right">种植基地</a></dt>
+            <dt><a href="#" class="left-arrow-right">农作物</a></dt>
+            <dt><a href="#" class="left-arrow-right">我的质询</a></dt>
+            <dt><a href="#" class="left-arrow-right">基本资料</a></dt>
+            <dt><a href="#" class="left-arrow-right">兽药列表</a></dt>
+            <dt><a href="#" class="left-arrow-right">饲料列表</a></dt>
+            <dt><a href="#" class="left-arrow-right">农资申请</a></dt>
+            <dt><a href="#" class="left-arrow-right">种苗申请</a></dt>
+            <dt><a href="#" class="left-arrow-right">兽药申请</a></dt>
+            <dt><a href="#" class="left-arrow-bottom">饲料申请</a></dt>
+            <dd><a href="#" class="left-arrow-right">三级菜单</a></dd>
+        </dl>
+    </div>
+    <!--left end-->
+
+    <!--l_close begin-->
+    <div class="fl l_close"> <a href="#"><img src="images/left.png" /></a> </div>
+    <!--l_close end-->
+
+    <!--right begin-->
+    <div class="fl right">
+
+        <!--tab begin-->
+        <div class="tab">
+            <ul>
+                <li><a href="#" class="current">销售台账明细售 &nbsp;</a><a href="#" ><span class="menuClose">&nbsp;</span></a></li>
+                <li><a href="#">库存数量详情</a></li>
+                <li><a href="#">违规销售明细</a></li>
+                <div class="cl"></div>
+            </ul>
+        </div>
+        <!--tab end-->
+
+        <div class="wrap100 tmshop">
+            <div class="r_list">
+
+                <!--搜索 begin-->
+                <div class="listTable">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <th width="13%" class="r">药店名称：</th>
+                            <td width="18%"><a href="#">
+                                <input name="input" class="inputW160" placeholder="请输入" />
+                            </a></td>
+                            <th class="r">物品名称 ：</th>
+                            <td><input name="input2" class="inputW160" /></td>
+                            <th class="r">下拉选择 ：</th>
+                            <td><label for="select"></label>
+                                <select class="select" name="select" id="select">
+                                    <option>请选择卡类型</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <th class="r">物品名称 ：</th>
+                            <td><select class="select"  name="select2" id="select2">
+                                <option>请选择卡类型</option>
+                            </select></td>
+                            <th class="r">交易日期 ：</th>
+                            <td ><input name="input3" class="inputW120" />
+                                -
+                                <input name="input4" class="inputW120" /></td>
+                            <td colspan="2"><button>搜 索</button></td>
+                        </tr>
+
+                    </table>
+                </div>
+                <!--搜索 end-->
+                <!--库存数量详情 begin-->
+                <h1>库存数量详情</h1>
+                <div class="listTable2">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <th width="11%">全选</th>
+                            <th width="13%">进货批次号</th>
+                            <th width="11%">物品编码</th>
+                            <th width="14%">物品名称</th>
+                            <th width="13%">已销售量</th>
+                            <th width="13%">库存量</th>
+                            <th width="13%">生成批次号</th>
+                            <th width="12%">保质期</th>
+                        </tr>
+                        <tr>
+                            <td class="c"><input name="" type="checkbox" value="" /></td>
+                            <td class="c">201508012253</td>
+                            <td class="c">23</td>
+                            <td class="c">咸阳智慧医疗</td>
+                            <td class="c">232</td>
+                            <td class="c">323</td>
+                            <td class="c">112323</td>
+                            <td class="c">2个月</td>
+                        </tr>
+                        <tr>
+                            <td class="c"><input name="" type="checkbox" value="" /></td>
+                            <td class="c">201508012253</td>
+                            <td class="c">23</td>
+                            <td class="c">咸阳智慧医疗</td>
+                            <td class="c">232</td>
+                            <td class="c">323</td>
+                            <td class="c">112323</td>
+                            <td class="c">2个月</td>
+                        </tr>
+                        <tr>
+                            <td class="c"><input name="" type="checkbox" value=""/></td>
+                            <td colspan="7" class="r"><button>新 增</button>
+                                <button>修 改</button>
+                                <button>删 除</button></td>
+                        </tr>
+                    </table>
+                    <!--分页 begin-->
+
+                    <div class="page-box">
+                        <div class="fl page">
+                            <ul class="page ">
+                                <li class="noneup"></li>
+                                <li class="up"><a href="#"></a></li>
+                                <li class="on">1</li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">6</a></li>
+                                <li>...</li>
+                                <li><a href="#">210</a></li>
+                                <li class="next"><a href="#"></a></li>
+                                <li class="nonedown"></li>
+                            </ul>
+                        </div>
+                        <div class="fl">共<strong>242</strong>页  到第</div>
+                        <input name="" type="text" />
+                        <button>确定</button>
+                        <div class="clear"></div>
+                    </div>
+
+                    <!--分页 end-->
+
+                </div>
+                <!--库存数量详情 end-->
+
+            </div>
+        </div>
+    </div>
+    <!--right end-->
+
+    <div class="cl"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="GoodsPest" mainattr="GOODSPEST_ID">
+    <mapingenty type="table">GOODSPEST</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="GOODSPEST_ID" maxlength="72" datatype="String" type="PK">
+        <mapingcol datatype="CHAR">GOODSPEST_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODPEST_NAME" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">GOODPEST_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PYSHORT" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PYSHORT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODS_ID" maxlength="72" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">GOODS_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PEST_ID" maxlength="72" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">PEST_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_USER" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CREATE_USER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_TIME" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">CREATE_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MODIFIED_USER" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">MODIFIED_USER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MODIFIED_TIME" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">MODIFIED_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PESTDESCR" maxlength="20" datatype="String" type="COL">
+        <mapingcol datatype="CLOB">PESTDESCR</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

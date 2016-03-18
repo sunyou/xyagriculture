@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="IgDelDetail" mainattr="DETAILID">
+    <mapingenty type="table">ig_deldetail</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="DETAILID" maxlength="36" datatype="String" type="PK">
+        <mapingcol datatype="VARCHAR">DETAILID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DELIVERID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">DELIVERID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMERID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">COFARMERID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OBJECTID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">OBJECTID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODSID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">GOODSID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AMOUNT" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="DECIMAL">AMOUNT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REMARK" maxlength="0" datatype="String" type="COL">
+        <mapingcol datatype="TEXT">REMARK</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CERTI" maxlength="0" datatype="String" type="COL">
+        <mapingcol datatype="TEXT">CERTI</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="FoodGrade" mainattr="THREEPROD_ID">
+    <mapingenty type="query">SELECT T1.THREEPROD_ID,
+       T1.CERNAME,
+       T1.PYSHORT,
+       T1.CERNO,
+       T1.CRITERIA_LEVEL,
+       T1.COFARMER_ID,
+       T1.APPPROD,
+       T1.SIGNDATE,
+       T1.SIGNDEPT,
+       T1.EFFECTDATE,
+       T1.CONTENT,
+       T1.TIMESTAMP,
+       T1.GOODSNAME,
+       T1.CHANDIADDR,
+       T2.COFARMER_NAME,
+       T2.Area_Id
+  FROM THREEPROD T1
+  LEFT OUTER JOIN COFARMER T2
+    ON T2.COFARMER_ID = T1.COFARMER_ID
+</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="THREEPROD_ID" maxlength="36" datatype="String" type="PK">
+        <mapingcol datatype="CHAR">THREEPROD_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CERNAME" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CERNAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PYSHORT" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PYSHORT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CERNO" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CERNO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CRITERIA_LEVEL" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">CRITERIA_LEVEL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">COFARMER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="APPPROD" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">APPPROD</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SIGNDATE" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">SIGNDATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SIGNDEPT" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">SIGNDEPT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EFFECTDATE" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">EFFECTDATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CONTENT" maxlength="256" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CONTENT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODSNAME" maxlength="512" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">GOODSNAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CHANDIADDR" maxlength="512" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CHANDIADDR</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_NAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">COFARMER_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AREA_ID" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">AREA_ID</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

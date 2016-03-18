@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="PlotEnvmon" mainattr="AUTOREC_ID">
+    <mapingenty type="table">PLOTENVMON</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="AUTOREC_ID" maxlength="72" datatype="String" type="PK">
+        <mapingcol datatype="CHAR">AUTOREC_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PLOT_ID" maxlength="72" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">PLOT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AIR_T" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">AIR_T</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AIR_H" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">AIR_H</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SOIL_T" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">SOIL_T</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SOIL_H" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">SOIL_H</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LIGHT" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">LIGHT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CO2" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">CO2</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATETIME" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">OPERATETIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

@@ -1,0 +1,10 @@
+/* CSS Document */
+
+.w600{width:600px;}
+
+/*弹出框*/
+.floatBox{ margin:0 auto; border-radius:5px; -webkit-border-radius:5px; overflow:hidden; border:1px solid #ddd; box-shadow:1px 1px 2px 2px #eee; -webkit-box-shadow:1px 1px 2px 2px #dedede;  -moz-box-shadow:1px 1px 2px 2px #dedede; padding-bottom:20px; background:#fff;}
+.floatTitleBg{ background:#80b566; height:35px; line-height:35px; color:#fff; text-indent:10px;  }
+.floatTitleBg h2{ font-size:15px; }
+.floatTitleBg .close{ margin-top:6px; margin-right:10px;}
+.floatContent{ margin:10px auto; width:95%; font-size:14px; color:#444; line-height:200%; }

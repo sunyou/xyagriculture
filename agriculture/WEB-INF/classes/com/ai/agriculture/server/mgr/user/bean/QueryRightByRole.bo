@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="QueryRightByRole" mainattr="PAGENAME">
+    <mapingenty type="query">SELECT T1.PAGENAME,T1.FUNCNAME,T3.ROLENAME,T3.ROLEID
+  FROM ZZ_RIGHT T1, ZZ_ROLERIGHT T2, ZZ_ROLE T3
+ WHERE T1.RIGHTID = T2.RIGHTID
+   AND T2.ROLEID = T3.ROLEID
+
+</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="PAGENAME" maxlength="1024" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PAGENAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="FUNCNAME" maxlength="1024" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">FUNCNAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ROLENAME" maxlength="250" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ROLENAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ROLEID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">ROLEID</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

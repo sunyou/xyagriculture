@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="PlantBaseV" mainattr="PLANTBASES_UID">
+    <mapingenty type="query">SELECT    PLANTBASES.PLANTBASES_UID, PLANTBASES.PLANTBASES_NAME, PLANTBASES.PLANTBASES_NO, PLANTBASES.PYSHORT, PLANTBASES.AREA_ID, PLANTBASES.COFARMER_ID, 
+                     PLANTBASES.PLOTENVIRONMENT, PLANTBASES.NOTES, PLANTBASES.TIMESTAMP,PLANTBASES.ISACTIVE,PLANTBASES.DOCFILESRC, PLANTBASES.CONTACTS,PLANTBASES.TEL, 
+                     PLANTBASES.DETAILADDR, COFARMER.COFARMER_NAME, COFARMER.COFARMERTYPE, COFARMER.RECORD_DATE, COFARMER.LEGAL_REPRESENT, COFARMER.PROPERTY, 
+                      COFARMER.INTRODUCTION,COFARMER.REG_CAPITAL,COFARMER.EMAIL,COFARMER.HUMITURE, COFARMER.HOMEPAGE, COFARMER.LICENSE, COFARMER.LATITUDE, 
+                     COFARMER.LONGITUDE, COFARMER.ZOOM, COFARMER.PROCATEGORY, TB1.AREAS
+FROM        PLANTBASES LEFT OUTER JOIN
+                      COFARMER ON PLANTBASES.COFARMER_ID = COFARMER.COFARMER_ID LEFT OUTER JOIN
+                          (SELECT     SUM(AREAS) AREAS, PLANTBASE_ID
+                            FROM         PLOT
+                            GROUP BY PLANTBASE_ID)  TB1 ON TB1.PLANTBASE_ID =PLANTBASES.PLANTBASES_UID</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="PLANTBASES_UID" maxlength="36" datatype="String" type="PK">
+        <mapingcol datatype="CHAR">PLANTBASES_UID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PLANTBASES_NAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PLANTBASES_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PLANTBASES_NO" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PLANTBASES_NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PYSHORT" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PYSHORT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AREA_ID" maxlength="12" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">AREA_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">COFARMER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PLOTENVIRONMENT" maxlength="4000" datatype="String" type="COL">
+        <mapingcol datatype="CLOB">PLOTENVIRONMENT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="NOTES" maxlength="4000" datatype="String" type="COL">
+        <mapingcol datatype="CLOB">NOTES</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ISACTIVE" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">ISACTIVE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DOCFILESRC" maxlength="4000" datatype="String" type="COL">
+        <mapingcol datatype="CLOB">DOCFILESRC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CONTACTS" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CONTACTS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TEL" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">TEL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DETAILADDR" maxlength="4000" datatype="String" type="COL">
+        <mapingcol datatype="CLOB">DETAILADDR</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_NAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">COFARMER_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMERTYPE" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">COFARMERTYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="RECORD_DATE" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">RECORD_DATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LEGAL_REPRESENT" maxlength="20" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">LEGAL_REPRESENT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PROPERTY" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">PROPERTY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="INTRODUCTION" maxlength="4000" datatype="String" type="COL">
+        <mapingcol datatype="CLOB">INTRODUCTION</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REG_CAPITAL" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">REG_CAPITAL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EMAIL" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">EMAIL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="HUMITURE" maxlength="256" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">HUMITURE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="HOMEPAGE" maxlength="512" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">HOMEPAGE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LICENSE" maxlength="500" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">LICENSE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LATITUDE" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">LATITUDE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LONGITUDE" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">LONGITUDE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ZOOM" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">ZOOM</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PROCATEGORY" maxlength="512" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PROCATEGORY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AREAS" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">AREAS</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

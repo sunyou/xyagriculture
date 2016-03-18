@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="GoodVarietyQueryMysql" mainattr="GOODVARIETY_ID">
+    <mapingenty type="query">select t1.goodvariety_id, t1.goods_id, t1.goodvariant_name, t1.pyshort, t1.emergencerate, t1.survivalrate, t1.pratique, t1.origin, t1.remark, t1.isactive, date_format(t1.timestamp,'%Y-%m-%d %H:%i:%s') as timestamp, t1.ispublic, t1.cofarmer_id, t1.seedingage, t2.Goods_Name, t3.Supplier_ID from GoodVariety t1 left join Goods t2 on t2.Goods_ID = t1.Goods_ID left join SupGoodVariety t3 on t1.GoodVariety_ID = t3.GoodVariety_ID</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="GOODVARIETY_ID" maxlength="36" datatype="String" type="PK">
+        <mapingcol datatype="CHAR">GOODVARIETY_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODS_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">GOODS_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODVARIANT_NAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">GOODVARIANT_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PYSHORT" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">PYSHORT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EMERGENCERATE" maxlength="40" datatype="Long" type="COL">
+        <mapingcol datatype="DECIMAL">EMERGENCERATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SURVIVALRATE" maxlength="40" datatype="Long" type="COL">
+        <mapingcol datatype="DECIMAL">SURVIVALRATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PRATIQUE" maxlength="21845" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">PRATIQUE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORIGIN" maxlength="21845" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">ORIGIN</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REMARK" maxlength="21845" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">REMARK</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ISACTIVE" maxlength="11" datatype="Long" type="COL">
+        <mapingcol datatype="DECIMAL">ISACTIVE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="24" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ISPUBLIC" maxlength="11" datatype="Long" type="COL">
+        <mapingcol datatype="DECIMAL">ISPUBLIC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">COFARMER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SEEDINGAGE" maxlength="21845" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">SEEDINGAGE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODS_NAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">GOODS_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SUPPLIER_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">SUPPLIER_ID</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

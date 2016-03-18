@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="QueryCSale" mainattr="BILL_ID">
+    <mapingenty type="query">select t1.*,t2.CoFarmer_Name from CSale t1
+left join Cofarmer t2 on t2.CoFarmer_ID=t1.CoFarmer_ID</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="BILL_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">BILL_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="BILL_NO" maxlength="120" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">BILL_NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">COFARMER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="RESELLER_NAME" maxlength="256" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">RESELLER_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OP_DATE" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">OP_DATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AMOUNT" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">AMOUNT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATORS" maxlength="256" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">OPERATORS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="NOTES" maxlength="500" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">NOTES</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_NAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">COFARMER_NAME</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

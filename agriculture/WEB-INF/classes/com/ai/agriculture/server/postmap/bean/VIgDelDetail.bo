@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="VIgDelDetail" mainattr="DETAILID">
+    <mapingenty type="query">SELECT IG_DelDetail.*, CoFarmer.CoFarmer_Name, Goods.Goods_Name FROM CoFarmer RIGHT OUTER JOIN IG_DelDetail ON CoFarmer.CoFarmer_ID = IG_DelDetail.CoFarmerID LEFT OUTER JOIN Goods ON IG_DelDetail.GoodsID = Goods.Goods_ID</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="DETAILID" maxlength="36" datatype="String" type="PK">
+        <mapingcol datatype="VARCHAR">DETAILID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DELIVERID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">DELIVERID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMERID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">COFARMERID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OBJECTID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">OBJECTID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODSID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">GOODSID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AMOUNT" maxlength="11" datatype="Long" type="COL">
+        <mapingcol datatype="DECIMAL">AMOUNT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REMARK" maxlength="21845" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">REMARK</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CERTI" maxlength="21845" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">CERTI</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_NAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">COFARMER_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODS_NAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">GOODS_NAME</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

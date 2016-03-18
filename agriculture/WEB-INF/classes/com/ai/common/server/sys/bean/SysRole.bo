@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="SysRole" mainattr="ROLEID">
+    <mapingenty type="table">ZZ_ROLE</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="ROLEID" maxlength="10" datatype="Long" type="PK" remark="角色ID">
+        <mapingcol datatype="NUMBER">ROLEID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ROLENAME" maxlength="250" datatype="String" type="COL" remark="角色名">
+        <mapingcol datatype="VARCHAR2">ROLENAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PARENTID" maxlength="10" datatype="Long" type="COL" remark="父ID">
+        <mapingcol datatype="NUMBER">PARENTID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="NOTES" maxlength="20" type="COL">
+        <mapingcol datatype="CLOB">NOTES</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ROLE_DES" maxlength="500" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ROLE_DES</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ROLE_STATE" maxlength="2" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ROLE_STATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORG_ID" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORG_ID</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

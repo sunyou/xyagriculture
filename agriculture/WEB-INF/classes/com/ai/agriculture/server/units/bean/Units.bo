@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="Units" mainattr="UNITID">
+    <mapingenty type="table">UNITS</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="UNITID" maxlength="10" datatype="Long" type="PK">
+        <mapingcol datatype="NUMBER">UNITID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="UNITNAME" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">UNITNAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CODE" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PYSHORT" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PYSHORT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DESCRIPTION" maxlength="20" type="COL">
+        <mapingcol datatype="CLOB">DESCRIPTION</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="UNITTYPE" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">UNITTYPE</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

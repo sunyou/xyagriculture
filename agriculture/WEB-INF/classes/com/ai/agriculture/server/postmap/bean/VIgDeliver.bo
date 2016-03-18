@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="VIgDeliver" mainattr="DELIVERID">
+    <mapingenty type="query">SELECT IG_Deliver.*, IG_Driver.Name, IG_Driver.Sex, IG_Driver.Age, IG_Driver.Tel, IG_Driver.DriveAge, IG_Driver.QQ, IG_Driver.Email, IG_Car.CarNo, IG_Car.CarType, IG_Car.CarCheck, IG_Car.CarState, IG_Car.MaxCap, IG_Car.GPS_NO, IG_Rec.Reciver, IG_Rec.RecAmount, IG_Rec.RecNo, IG_Rec.RecID, IG_Driver.Photo FROM IG_Deliver LEFT OUTER JOIN IG_Rec ON IG_Deliver.DeliverID = IG_Rec.DeliverID LEFT OUTER JOIN IG_Driver ON IG_Deliver.DriverID = IG_Driver.DriveID LEFT OUTER JOIN IG_Car ON IG_Deliver.CarID = IG_Car.CarID</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="DELIVERID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">DELIVERID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DELIVERNO" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">DELIVERNO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATEDATE" maxlength="19" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATETIME">OPERATEDATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CARID" maxlength="11" datatype="Long" type="COL">
+        <mapingcol datatype="DECIMAL">CARID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DRIVERID" maxlength="11" datatype="Long" type="COL">
+        <mapingcol datatype="DECIMAL">DRIVERID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="RESELLERID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">RESELLERID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DELAMOUNT" maxlength="11" datatype="Long" type="COL">
+        <mapingcol datatype="DECIMAL">DELAMOUNT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DELDATE" maxlength="19" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATETIME">DELDATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="RECDATE" maxlength="19" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATETIME">RECDATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DELADD" maxlength="21845" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">DELADD</mapingcol>
+      </attr>
+      <attr floatlength="0" name="RECADD" maxlength="21845" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">RECADD</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DELSTATE" maxlength="11" datatype="Long" type="COL">
+        <mapingcol datatype="DECIMAL">DELSTATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REMARK" maxlength="21845" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">REMARK</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="19" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATETIME">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="NAME" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SEX" maxlength="11" datatype="Long" type="COL">
+        <mapingcol datatype="DECIMAL">SEX</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AGE" maxlength="11" datatype="Long" type="COL">
+        <mapingcol datatype="DECIMAL">AGE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TEL" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">TEL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DRIVEAGE" maxlength="11" datatype="Long" type="COL">
+        <mapingcol datatype="DECIMAL">DRIVEAGE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="QQ" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">QQ</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EMAIL" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">EMAIL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CARNO" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">CARNO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CARTYPE" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">CARTYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CARCHECK" maxlength="19" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATETIME">CARCHECK</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CARSTATE" maxlength="11" datatype="Long" type="COL">
+        <mapingcol datatype="DECIMAL">CARSTATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MAXCAP" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">MAXCAP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GPS_NO" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">GPS_NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="RECIVER" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">RECIVER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="RECAMOUNT" maxlength="11" datatype="Long" type="COL">
+        <mapingcol datatype="DECIMAL">RECAMOUNT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="RECNO" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">RECNO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="RECID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">RECID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PHOTO" maxlength="21845" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">PHOTO</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

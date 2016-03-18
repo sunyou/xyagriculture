@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="Recall" mainattr="RECALL_ID">
+    <mapingenty type="table">RECALL</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="RECALL_ID" maxlength="72" datatype="String" type="PK">
+        <mapingcol datatype="CHAR">RECALL_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="RECALL_NO" maxlength="240" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">RECALL_NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OP_DATE" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">OP_DATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PLANTLOT_ID" maxlength="72" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">PLANTLOT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PLOTHARVEST_ID" maxlength="72" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">PLOTHARVEST_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PACKAGE_UID" maxlength="72" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">PACKAGE_UID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="RECALL_OBJECT" maxlength="72" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">RECALL_OBJECT</mapingcol>
+      </attr>
+      <attr floatlength="2" name="PURCHASEAMOUNT" maxlength="38" datatype="Float" type="COL">
+        <mapingcol datatype="NUMBER">PURCHASEAMOUNT</mapingcol>
+      </attr>
+      <attr floatlength="2" name="RECALLAMOUNT" maxlength="38" datatype="Float" type="COL">
+        <mapingcol datatype="NUMBER">RECALLAMOUNT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="NOTES" maxlength="4000" type="COL" datatype="String">
+        <mapingcol datatype="VARCHAR2">NOTES</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATORS" maxlength="512" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">OPERATORS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STATE" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">STATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_USER" maxlength="512" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CREATE_USER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_TIME" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">CREATE_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MODIFIED_USER" maxlength="512" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">MODIFIED_USER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MODIFIED_TIME" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">MODIFIED_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_ID" maxlength="72" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">COFARMER_ID</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

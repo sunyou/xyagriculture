@@ -1,0 +1,23 @@
+@import url("ligerui-common.css");
+@import url("ligerui-dialog.css");
+@import url("ligerui-form.css");
+@import url("ligerui-grid.css");
+@import url("ligerui-layout.css");
+@import url("ligerui-menu.css");
+@import url("ligerui-tab.css");
+@import url("ligerui-tree.css");
+.l-layout-header {font-weight:normal;font-size:14px;font-family:"Î¢ÈíÑÅºÚ"}
+.l-layout-left, .l-layout-right, .l-layout-center, .l-layout-top, .l-layout-bottom {
+    /*  border: 1px solid #cccccc;*/
+}
+.l-tab-links,.l-panel-header,.l-grid-header {
+  /*  border-bottom: 1px solid #cccccc;*/
+}
+.l-panel {border:1px solid #cccccc;}
+.l-grid-row-cell{border-bottom: 1px solid #c5d7bd;
+    border-right: 1px solid #c5d7bd;}
+	.l-grid-hd-cell {
+    border-right: 1px solid #c5d7bd;}
+	.l-panel-bar {border-top:1px solid #c5d7bd;}
+	.l-bar-separator {border-left: 1px solid #1E9231;
+    border-right: 1px solid white;}

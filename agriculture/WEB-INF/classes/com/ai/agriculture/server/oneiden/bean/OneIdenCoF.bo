@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="OneIdenCoF" mainattr="ONEIDEN_ID">
+    <mapingenty type="query"> SELECT 
+T1.*,T2.COFARMER_NAME,t2.area_id FROM ONEIDEN T1 
+LEFT JOIN COFARMER T2 ON T1.COFARMER_ID=T2.COFARMER_ID</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="ONEIDEN_ID" maxlength="36" datatype="String" type="PK">
+        <mapingcol datatype="CHAR">ONEIDEN_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ONEIDENNAME" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ONEIDENNAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PYSHORT" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PYSHORT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ONEIDENNO" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ONEIDENNO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REGISTER" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">REGISTER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PRODSCALE" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PRODSCALE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SPECNUM" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">SPECNUM</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">COFARMER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CONTENT" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CONTENT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_NAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">COFARMER_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AREA_ID" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">AREA_ID</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

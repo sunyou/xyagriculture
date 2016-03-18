@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="IgRec" mainattr="RECID">
+    <mapingenty type="table">ig_rec</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="RECID" maxlength="36" datatype="String" type="PK">
+        <mapingcol datatype="VARCHAR">RECID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="RECNO" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">RECNO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DELIVERID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">DELIVERID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="RECDATE" maxlength="0" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATETIME">RECDATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="RECAMOUNT" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="DECIMAL">RECAMOUNT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="RECIVER" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">RECIVER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REMARK" maxlength="2000" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">REMARK</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="0" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATETIME">TIMESTAMP</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

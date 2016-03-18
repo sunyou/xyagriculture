@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="LabelObject" mainattr="OBJ_ID">
+    <mapingenty type="table">LABELOBJECT</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="OBJ_ID" maxlength="20" datatype="Long" type="PK">
+        <mapingcol datatype="NUMBER">OBJ_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OBJECT_NO" maxlength="20" datatype="String" type="COL">
+        <mapingcol datatype="NVARCHAR2">OBJECT_NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_ID" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">COFARMER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_NO" maxlength="20" datatype="String" type="COL">
+        <mapingcol datatype="NVARCHAR2">COFARMER_NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPER_DATE" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">OPER_DATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STYPE" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">STYPE</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

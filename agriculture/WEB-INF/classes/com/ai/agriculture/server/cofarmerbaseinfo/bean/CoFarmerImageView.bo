@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="CoFarmerImageView" mainattr="IMAGEID">
+    <mapingenty type="query">SELECT t1.ImageID,
+       t1.Dept_ID,
+       t1.ImageType,
+       t1.ImageSrc,
+       t1.Notes,
+       t1.Timestamp,
+       t2.CoFarmer_Name AS DeptName,
+       t3.TypeName
+  FROM CoFarmerImage  t1
+  LEFT OUTER JOIN CoFarmer  t2
+    ON t2.CoFarmer_ID = t1.Dept_ID
+  LEFT OUTER JOIN ImageType t3
+    ON t3.TypeID = t1.ImageType</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="IMAGEID" maxlength="36" datatype="String" type="PK">
+        <mapingcol datatype="CHAR">IMAGEID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DEPT_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">DEPT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="IMAGETYPE" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">IMAGETYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="IMAGESRC" maxlength="4000" datatype="String" type="COL">
+        <mapingcol datatype="CLOB">IMAGESRC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="NOTES" maxlength="4000" datatype="String" type="COL">
+        <mapingcol datatype="CLOB">NOTES</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DEPTNAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">DEPTNAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TYPENAME" maxlength="512" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">TYPENAME</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

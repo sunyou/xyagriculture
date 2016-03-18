@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="PlotGoodsName" mainattr="PLOT_ID">
+    <mapingenty type="table">PLOTGOODS_NAME</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="PLOT_ID" maxlength="64" datatype="String" type="PK">
+        <mapingcol datatype="VARCHAR2">PLOT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODS_NAME" maxlength="500" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">GOODS_NAME</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

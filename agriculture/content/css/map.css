@@ -1,0 +1,141 @@
+﻿@charset "utf-8";
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+#controller {
+	background: transparent url(images/map_bg.png) repeat-x scroll top left;
+	width: 100%;
+	height: 68px;
+	z-index: 10000;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+#container {
+	height: 100%;
+}
+#tools {
+	width: 1000px;
+	margin: 0 auto;
+}
+#driverInfo, #LED_Msg, #controls {
+	background: transparent url(images/map_bg.png) repeat-x scroll top left;
+	float: left;
+	margin-right: 5px;
+}
+#driverInfo {
+	background-position: 0 -68px;
+	width: 227px;
+	height: 58px;
+	margin-top: 5px;
+	cursor: pointer;
+}
+#driverInfo ul{
+	list-style-type:none;
+	width:100%;
+	height: 58px;
+	margin:0px;
+	padding:0px;
+}
+#driverInfo ul li{
+	border:none;
+}
+
+#driverInfo ul li .detail_msg{
+	width:451px;
+	height:370px;
+	background: transparent url(images/map_bg.png) repeat-x scroll 0 -277px;
+	margin-left:-158px;
+	display:none;
+}
+
+#LED_Msg {
+	background-position: 0 -128px;
+	width: 532px;
+	height: 67px;
+}
+#controls {
+	background-position: 0 -195px;
+	width: 204px;
+	height: 59px;
+	margin-top: 5px;
+}
+.cleafix {
+	width: 100%;
+	clear: both;
+}
+#carInfo{height:56px;line-height:56px;}
+#ChinaNo, #CarNO {
+	float: left;
+	line-height: 40px;
+	height: 50px;
+	display: block;
+	color: #FFFFFF;
+	font-size: 50px;
+	font-family: "方正楷体_GBK";
+	padding-top: 6px;
+}
+#ChinaNo {
+	margin-top: 5px;
+	margin-left: 5px;
+}
+#CarNO {
+	margin-left: 15px;
+	;
+	font-size: 48px
+}
+#LED_Text {
+	width: 518px;
+	margin: 0 auto;
+	height: 56px;
+	line-height: 56px;
+	margin: 8px 0px 0px 0px;
+	color: #ffea01;
+	font-size: 37px;
+}
+#play, #pause, #reset {
+	width: 54px;
+	height: 54px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 0px;
+	margin: 0px 0px 0px 3px;
+	text-indent: 1000em;
+}
+#driverMan{
+	width:100%;
+	padding:25px 0px 0px 10px;
+}
+#driverManPic,#driverManInfo{
+	float:left;
+	width:168px;
+	height:168px;
+}
+#driverManPic #prev_img{
+	border:dashed 1px #797877;
+}
+
+#driverManInfo dl{
+	width:100%;
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+	clear:both;
+	padding-left:20px;
+}
+#driverManInfo dl dt,#driverManInfo dl dd{
+	float:left;
+	height:32px;
+	line-height:32px;
+}
+#driverManInfo dl dt{
+	font-weight:bold;
+}
+
+
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="ZZReportFile" mainattr="ID">
+    <mapingenty type="table">ZZ_REPORTFILE</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="ID" maxlength="20" datatype="Long" type="PK">
+        <mapingcol datatype="NUMBER">ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_ID" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">COFARMER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORTSTR" maxlength="20" type="COL">
+        <mapingcol datatype="CLOB">REPORTSTR</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ISDEFAULT" maxlength="1" datatype="Integer" type="COL">
+        <mapingcol datatype="NUMBER">ISDEFAULT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REPORTNAME" maxlength="20" datatype="String" type="COL">
+        <mapingcol datatype="NVARCHAR2">REPORTNAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="IMAGESRC" maxlength="20" datatype="String" type="COL">
+        <mapingcol datatype="NVARCHAR2">IMAGESRC</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

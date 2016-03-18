@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="PlantLot" mainattr="PLANTLOT_ID">
+    <mapingenty type="table">PLANTLOT</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="PLANTLOT_ID" maxlength="72" datatype="String" type="PK">
+        <mapingcol datatype="CHAR">PLANTLOT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PLOT_ID" maxlength="72" datatype="String" type="COL" remark="plot表plot_id字段(种植地)">
+        <mapingcol datatype="CHAR">PLOT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="FARMER_ID" maxlength="72" datatype="String" type="COL" remark="farmer表farmer_id">
+        <mapingcol datatype="CHAR">FARMER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="FARMER_NAME" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">FARMER_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TECHNICS_ID" maxlength="72" datatype="String" type="COL" remark="技术员ID.ZZ_LoginUser表user_id">
+        <mapingcol datatype="CHAR">TECHNICS_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_ID" maxlength="72" datatype="String" type="COL" remark="合作社ID.cofarmer表cofarmer_id">
+        <mapingcol datatype="CHAR">COFARMER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PLANTYEAR" maxlength="10" datatype="Long" type="COL" remark="种植年份">
+        <mapingcol datatype="NUMBER">PLANTYEAR</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PLANTYIELD_CODE" maxlength="10" datatype="Long" type="COL" remark="种植方式（1：种子播种、2:种苗移栽、3：扦插）">
+        <mapingcol datatype="NUMBER">PLANTYIELD_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODS_ID" maxlength="72" datatype="String" type="COL" remark="作物ID.goods表goods_id">
+        <mapingcol datatype="CHAR">GOODS_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODS_NAME" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">GOODS_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODVARIETY_ID" maxlength="72" datatype="String" type="COL" remark="种苗">
+        <mapingcol datatype="CHAR">GOODVARIETY_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CRITERIA_ID" maxlength="72" datatype="String" type="COL" remark="标准ID.CRITERIA_DOC表CRITERIA_ID">
+        <mapingcol datatype="CHAR">CRITERIA_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PLANT_DATE" maxlength="20" datatype="DateTime" type="COL" remark="种植日期">
+        <mapingcol datatype="DATE">PLANT_DATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOT_NO" maxlength="512" datatype="String" type="COL" remark="批次号">
+        <mapingcol datatype="VARCHAR2">LOT_NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="RFID_ID" maxlength="512" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">RFID_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CRITERIA_LEVEL" maxlength="10" datatype="Long" type="COL" remark="生产标准（1：绿色、2：有机、3：无公害）">
+        <mapingcol datatype="NUMBER">CRITERIA_LEVEL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ISCLOSED" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">ISCLOSED</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_USER" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CREATE_USER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_TIME" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">CREATE_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MODIFIED_USER" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">MODIFIED_USER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MODIFIED_TIME" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">MODIFIED_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STATE" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">STATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PURCHASE_ID" maxlength="72" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">PURCHASE_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STUBBLES" maxlength="10" datatype="Long" type="COL" remark="茬口（1：春茬、2：秋茬、3：越冬）">
+        <mapingcol datatype="NUMBER">STUBBLES</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODSTYPE_ID" maxlength="72" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">GOODSTYPE_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SUPPLIER_ID" maxlength="72" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">SUPPLIER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PRODUCER_ID" maxlength="72" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">PRODUCER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODVARIETY_NAME" maxlength="512" datatype="String" type="COL" remark="种苗名称">
+        <mapingcol datatype="VARCHAR2">GOODVARIETY_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PRODUCER_NAME" maxlength="512" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PRODUCER_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SUPPLIER_NAME" maxlength="512" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">SUPPLIER_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOOD_TYPE" maxlength="10" datatype="Long" type="COL" remark="作物类型">
+        <mapingcol datatype="NUMBER">GOOD_TYPE</mapingcol>
+      </attr>
+      <attr floatlength="2" name="AREAS" maxlength="38" datatype="Float" type="COL">
+        <mapingcol datatype="NUMBER">AREAS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="NOTES" maxlength="4000" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">NOTES</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

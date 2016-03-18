@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="SysMenu" mainattr="MENU_ID">
+    <mapingenty type="table">ZZ_MENU</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="MENU_ID" maxlength="20" datatype="Long" type="PK">
+        <mapingcol datatype="NUMBER">MENU_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MENU_NAME" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">MENU_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MENU_URL" maxlength="500" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">MENU_URL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MENU_ORDER" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">MENU_ORDER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MENU_TYPE" maxlength="20" datatype="Long" type="COL" remark="1菜单,2功能,3目录,4子系统,5虚拟目录">
+        <mapingcol datatype="NUMBER">MENU_TYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MENU_DESC" maxlength="500" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">MENU_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PARENT_MENU_ID" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">PARENT_MENU_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_DATE" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">CREATE_DATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STATE" maxlength="1" datatype="String" type="COL" remark="1有效 0无效">
+        <mapingcol datatype="VARCHAR2">STATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GROUP_ID" maxlength="1" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">GROUP_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SYS_TYPE" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">SYS_TYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MENU_IMAGE" maxlength="500" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">MENU_IMAGE</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

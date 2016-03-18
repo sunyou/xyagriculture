@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="QueryLabelPrintCount" mainattr="PRINT_DATE">
+    <mapingenty type="query">select to_char(TRUNC(t1.print_date, 'dd'), 'yyyy-MM-dd') Print_Date,t2.area_id,
+       t1.cofarmer_id,
+       t2.cofarmer_name,
+       count(1) LabelCount
+  from Label_Print t1
+  left join cofarmer t2
+    on t1.cofarmer_id = t2.cofarmer_id
+ group by to_char(TRUNC(t1.print_date, 'dd'), 'yyyy-MM-dd'),
+          t1.cofarmer_id,
+          t2.cofarmer_name,
+          t2.area_id</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="PRINT_DATE" maxlength="10" datatype="String" type="PK">
+        <mapingcol datatype="VARCHAR2">PRINT_DATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AREA_ID" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">AREA_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">COFARMER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_NAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">COFARMER_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LABELCOUNT" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">LABELCOUNT</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

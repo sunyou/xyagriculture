@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="GoodsSty" mainattr="GOODS_ID">
+    <mapingenty type="query">SELECT T1.*,T2.GOODSTYPE_NAME,T2.GOOD_TYPE
+FROM GOODS T1 
+LEFT JOIN GOODSTYPE T2 ON T2.GOODSTYPE_ID=T1.GOODSTYPE_ID </mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="GOODS_ID" maxlength="36" datatype="String" type="PK">
+        <mapingcol datatype="CHAR">GOODS_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODSTYPE_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">GOODSTYPE_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODSSTD_NO" maxlength="120" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">GOODSSTD_NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODS_NAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">GOODS_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PYSHORT" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PYSHORT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REMARK" maxlength="4000" type="COL">
+        <mapingcol datatype="CLOB">REMARK</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_USER" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CREATE_USER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_TIME" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">CREATE_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MODIFIED_USER" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">MODIFIED_USER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MODIFIED_TIME" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">MODIFIED_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PHOTO" maxlength="512" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PHOTO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COMMONNAME" maxlength="64" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">COMMONNAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODSTYPE_NAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">GOODSTYPE_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOOD_TYPE" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">GOOD_TYPE</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

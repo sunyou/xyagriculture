@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="GoodVariety" mainattr="GOODVARIETY_ID">
+    <mapingenty type="table">GOODVARIETY</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="GOODVARIETY_ID" maxlength="72" datatype="String" type="PK">
+        <mapingcol datatype="CHAR">GOODVARIETY_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODS_ID" maxlength="72" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">GOODS_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODVARIANT_NAME" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">GOODVARIANT_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PYSHORT" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PYSHORT</mapingcol>
+      </attr>
+      <attr floatlength="2" name="EMERGENCERATE" maxlength="38" datatype="Float" type="COL">
+        <mapingcol datatype="NUMBER">EMERGENCERATE</mapingcol>
+      </attr>
+      <attr floatlength="2" name="SURVIVALRATE" maxlength="38" datatype="Float" type="COL">
+        <mapingcol datatype="NUMBER">SURVIVALRATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PRATIQUE" maxlength="512" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PRATIQUE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORIGIN" maxlength="512" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ORIGIN</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REMARK" maxlength="8192" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">REMARK</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ISACTIVE" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">ISACTIVE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ISPUBLIC" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">ISPUBLIC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_ID" maxlength="72" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">COFARMER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SEEDINGAGE" maxlength="1024" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">SEEDINGAGE</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

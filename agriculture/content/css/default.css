@@ -1,0 +1,84 @@
+/*’“ªÿ√‹¬Î*/
+.back_list{
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+}
+.back_list li{
+	float:left;
+	width:100%;
+	margin:0px 0px 10px 0px;
+	position:relative;
+}
+
+.back_list li span{
+	width:120px;
+	line-height:20px;
+	height:25px;
+	display:block;
+	float:left;
+	text-align:right;
+}
+.back_list li .back_error{
+	float:left;
+	color:#f4680b;
+}
+
+.back_list li .txt_input{
+	border:1px solid #E6E6E6;
+	border-top-color:#C2C2C2;
+	border-left-color:#C2C2C2;
+	line-height:20px;
+	height:25px;
+	width:260px;
+	float:left;
+}
+
+
+.back_list li .vimg{
+	position:absolute;
+	left:386px;
+	top:4px;
+
+}
+
+#back_bg{
+	background:url(images/pass_back_bg.jpg) repeat-x scroll top left;
+
+
+
+}
+
+#pwd_back_box{
+	margin:0px auto 0px auto;
+	width:900px;
+	position:relative;
+}
+.pwd_back_box_top{
+	height:36px;
+	line-height:36px;
+
+}
+.pwd_back_box.box{
+	padding:20px 0px 0px 0px;
+}
+
+.pwd_back_box h6{
+	font-size:18px;
+	font-weight:bold;
+	color:#2f2f2f;
+}
+
+#copyright{
+	position:absolute;
+	top:514px;
+	left:0px;
+	text-align:center;
+	width:100%;
+}
+#copyright p{
+	text-align:center;
+	line-height:23px;
+}
+.clearfix{clear:both;width:100%;}
+/*’“ªÿ√‹¬Î*/

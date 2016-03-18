@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="IgDriver" mainattr="DRIVEID">
+    <mapingenty type="table">IG_DRIVER</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="DRIVEID" maxlength="128" datatype="String" type="PK">
+        <mapingcol datatype="VARCHAR2">DRIVEID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DRIVENO" maxlength="64" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">DRIVENO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="NAME" maxlength="64" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SEX" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">SEX</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AGE" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">AGE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DRIVEAGE" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">DRIVEAGE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TEL" maxlength="64" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">TEL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="QQ" maxlength="64" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">QQ</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EMAIL" maxlength="64" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">EMAIL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ADDRE" maxlength="512" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ADDRE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REMARK" maxlength="512" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">REMARK</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PHOTO" maxlength="624" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PHOTO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

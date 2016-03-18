@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="PlantBaseDet" mainattr="PLANTBASES_UID">
+    <mapingenty type="query">SELECT 
+T1.*,
+T2.AREA_FULLNAME,
+T3.COFARMER_NAME,
+(SELECT SUM(AREAS) FROM PLOT WHERE PLANTBASE_ID=T1.PLANTBASES_UID) AS AREAS
+FROM PLANTBASES T1 
+LEFT JOIN AREAS T2 ON T2.AREA_ID=T1.AREA_ID
+LEFT JOIN COFARMER T3 ON T3.COFARMER_ID=T1.COFARMER_ID  ORDER BY PLANTBASES_NO ASC</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="PLANTBASES_UID" maxlength="36" datatype="String" type="PK">
+        <mapingcol datatype="CHAR">PLANTBASES_UID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PLANTBASES_NAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PLANTBASES_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PLANTBASES_NO" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PLANTBASES_NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PYSHORT" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PYSHORT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AREA_ID" maxlength="12" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">AREA_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">COFARMER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PLOTENVIRONMENT" maxlength="4000" datatype="String" type="COL">
+        <mapingcol datatype="CLOB">PLOTENVIRONMENT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="NOTES" maxlength="4000" datatype="String" type="COL">
+        <mapingcol datatype="CLOB">NOTES</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ISACTIVE" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">ISACTIVE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DOCFILESRC" maxlength="4000" datatype="String" type="COL">
+        <mapingcol datatype="CLOB">DOCFILESRC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CONTACTS" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CONTACTS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TEL" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">TEL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DETAILADDR" maxlength="4000" datatype="String" type="COL">
+        <mapingcol datatype="CLOB">DETAILADDR</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PROVINCE_AID" maxlength="12" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PROVINCE_AID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CITY_AID" maxlength="12" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CITY_AID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COUNTY_AID" maxlength="12" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">COUNTY_AID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TOWN_AID" maxlength="12" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">TOWN_AID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AREA_FULLNAME" maxlength="500" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">AREA_FULLNAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_NAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">COFARMER_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AREAS" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">AREAS</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

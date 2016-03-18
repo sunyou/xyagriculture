@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="QueryLabelPrint" mainattr="PRINT_UID">
+    <mapingenty type="query">select t1.*, t2.cofarmer_name, t2.area_id, t3.good_value
+  from Label_Print t1 
+  left join cofarmer t2
+    on t1.cofarmer_id = t2.cofarmer_id
+    
+     left join package t3
+    on t1.object_uid = t3.package_uid
+    </mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="PRINT_UID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">PRINT_UID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STYPE" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">STYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OBJECT_UID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">OBJECT_UID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LABEL_NO" maxlength="256" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">LABEL_NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PRINT_DATE" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">PRINT_DATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OBJECT_NO" maxlength="256" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">OBJECT_NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">COFARMER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_NAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">COFARMER_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AREA_ID" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">AREA_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOOD_VALUE" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">GOOD_VALUE</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

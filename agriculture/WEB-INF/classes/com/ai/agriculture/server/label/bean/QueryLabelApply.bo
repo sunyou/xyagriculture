@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="QueryLabelApply" mainattr="APPLY_ID">
+    <mapingenty type="query">select t1.*,
+       t2.CoFarmer_Name,
+       T2.AREA_ID,
+       T2.Tel,
+       t3.Package_No,
+       t3.good_value,
+       t4.qty,
+       t6.areas,
+       t6.plantlot_id,
+        t6.lot_no,
+       t5.plotoper_id,
+       t5.qty harvest_qty,
+       t8.plantbases_name,
+       t8.plantbases_uid,
+       t7.plot_id,
+       t7.plot_name,
+      '' DETECTION_UID,
+      '' results
+  from LabelApply t1
+  left join CoFarmer t2
+    on t1.CoFarmer_ID = t2.CoFarmer_ID
+  left join Package t3
+    on t1.Object_UID = t3.Package_UID
+
+  left join package_detail t4
+    on t1.Object_UID = t4.Package_UID
+  left join plotharvest t5
+    on t4.harvestoperate_id = t5.plotoper_id
+  left join plantlot t6
+    on t5.plantlot_id = t6.plantlot_id
+  left join Plot t7
+    on t7.plot_id = t6.plot_id
+  left join plantbases t8
+    on t8.plantbases_uid = t7.plantbase_id
+  </mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="APPLY_ID" maxlength="36" datatype="String" type="PK">
+        <mapingcol datatype="VARCHAR2">APPLY_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="APPLY_USER" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">APPLY_USER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="APPLY_DATE" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">APPLY_DATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="APPLY_NO" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">APPLY_NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="APPLY_REMARK" maxlength="4000" type="COL">
+        <mapingcol datatype="CLOB">APPLY_REMARK</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">COFARMER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OBJECT_UID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">OBJECT_UID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AMOUNT" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">AMOUNT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AUDIT_RESULT" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">AUDIT_RESULT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AUDITUSER" maxlength="256" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">AUDITUSER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AUDIT_DATE" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">AUDIT_DATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REJECTREASON" maxlength="4000" type="COL">
+        <mapingcol datatype="CLOB">REJECTREASON</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PRINTNUM" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">PRINTNUM</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_NAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">COFARMER_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AREA_ID" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">AREA_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TEL" maxlength="15" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">TEL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PACKAGE_NO" maxlength="120" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PACKAGE_NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOOD_VALUE" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">GOOD_VALUE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="QTY" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">QTY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AREAS" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">AREAS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PLANTLOT_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">PLANTLOT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LOT_NO" maxlength="256" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">LOT_NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PLOTOPER_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">PLOTOPER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="HARVEST_QTY" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">HARVEST_QTY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PLANTBASES_NAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PLANTBASES_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PLANTBASES_UID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">PLANTBASES_UID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PLOT_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PLOT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PLOT_NAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PLOT_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DETECTION_UID" maxlength="0" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">DETECTION_UID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="RESULTS" maxlength="0" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">RESULTS</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="ViewApplyDet" mainattr="APPLY_ID">
+    <mapingenty type="query">select * from (SELECT t1.Apply_ID,
+       t1.CoFarmer_ID AS Dept_ID,
+       t1.Area_ID ,
+       t1.Apply_Date,
+       t1.Apply_Type,
+       t1.CoFarmer_Name AS Dept_Name,
+       t1.Audit_Date,
+       t1.Audit_Result,
+       t1.AuditUser_ID,
+       1 AS Dept_Type,
+       '农资生产商' as Dept_Type_show,
+       CASE
+         WHEN T1.apply_type = '1' THEN
+          '申请注册'
+         WHEN T1.apply_type = '2' THEN
+          '变更名称'
+         WHEN T1.apply_type = '3' THEN
+          '变更属性'
+         ELSE
+          '申请注销'
+       END AS apply_type_show
+  FROM CoFarmerApply t1
+  LEFT JOIN ZZ_LoginUser t2
+    ON t2.User_ID = t1.AuditUser_ID
+UNION ALL
+SELECT t1.Apply_ID,
+       t1.Supplier_ID AS Dept_ID,
+       t1.Area_ID,
+       t1.Apply_Date,
+       t1.Apply_Type,
+       t1.Supplier_Name AS Dept_Name,
+       t1.Audit_Date,
+       t1.Audit_Result,
+       t1.AuditUser_ID,
+       2 AS Dept_Type,
+       '农资经销商' as Dept_Type_show,
+       CASE
+         WHEN T1.apply_type = '1' THEN
+          '申请注册'
+         WHEN T1.apply_type = '2' THEN
+          '变更名称'
+         WHEN T1.apply_type = '3' THEN
+          '变更属性'
+         ELSE
+          '申请注销'
+       END AS apply_type_show
+
+  FROM SupplierApply t1
+  LEFT JOIN ZZ_LoginUser t2
+    ON t2.User_ID = t1.AuditUser_ID)  t3 order by t3.Audit_Date desc</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="APPLY_ID" maxlength="36" datatype="String" type="PK">
+        <mapingcol datatype="CHAR">APPLY_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DEPT_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">DEPT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AREA_ID" maxlength="300" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">AREA_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="APPLY_DATE" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">APPLY_DATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="APPLY_TYPE" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">APPLY_TYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DEPT_NAME" maxlength="300" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">DEPT_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AUDIT_DATE" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">AUDIT_DATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AUDIT_RESULT" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">AUDIT_RESULT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AUDITUSER_ID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">AUDITUSER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DEPT_TYPE" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">DEPT_TYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DEPT_TYPE_SHOW" maxlength="10" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">DEPT_TYPE_SHOW</mapingcol>
+      </attr>
+      <attr floatlength="0" name="APPLY_TYPE_SHOW" maxlength="8" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">APPLY_TYPE_SHOW</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

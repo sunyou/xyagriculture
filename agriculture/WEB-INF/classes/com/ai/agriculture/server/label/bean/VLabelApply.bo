@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="VLabelApply" mainattr="APPLY_ID">
+    <mapingenty type="table">V_LABELAPPLY</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="APPLY_ID" maxlength="20" datatype="Long" type="PK">
+        <mapingcol datatype="NUMBER">APPLY_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="APPLY_USER" maxlength="20" datatype="String" type="COL">
+        <mapingcol datatype="NVARCHAR2">APPLY_USER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="APPLY_DATE" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">APPLY_DATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="APPLY_NO" maxlength="20" datatype="String" type="COL">
+        <mapingcol datatype="NVARCHAR2">APPLY_NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="APPLY_REMARK" maxlength="20" type="COL">
+        <mapingcol datatype="CLOB">APPLY_REMARK</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_ID" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">COFARMER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OBJECT_UID" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">OBJECT_UID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AMOUNT" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">AMOUNT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AUDIT_RESULT" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">AUDIT_RESULT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AUDITUSER" maxlength="255" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">AUDITUSER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AUDIT_DATE" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">AUDIT_DATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REJECTREASON" maxlength="20" type="COL">
+        <mapingcol datatype="CLOB">REJECTREASON</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PRINTNUM" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">PRINTNUM</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_NAME" maxlength="20" datatype="String" type="COL">
+        <mapingcol datatype="NVARCHAR2">COFARMER_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TEL" maxlength="20" datatype="String" type="COL">
+        <mapingcol datatype="NVARCHAR2">TEL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PACKAGE_NO" maxlength="20" datatype="String" type="COL">
+        <mapingcol datatype="NVARCHAR2">PACKAGE_NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODS_NAME" maxlength="20" type="COL">
+        <mapingcol datatype="CLOB">GOODS_NAME</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

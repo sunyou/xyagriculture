@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="Farmer" mainattr="COFARMER_ID">
+    <mapingenty type="table">FARMER</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="FARMER_ID" maxlength="72" datatype="String" type="PK">
+        <mapingcol datatype="CHAR">FARMER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="FARMER_NAME" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">FARMER_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PYSHORT" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PYSHORT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TEL" maxlength="30" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">TEL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PERSONID" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PERSONID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AREA_ID" maxlength="24" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">AREA_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_ID" maxlength="72" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">COFARMER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ISACTIVE" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">ISACTIVE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SEX" maxlength="4" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">SEX</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ADDRESS" maxlength="20" datatype="String" type="COL">
+        <mapingcol datatype="CLOB">ADDRESS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REMARK" maxlength="20" datatype="String" type="COL">
+        <mapingcol datatype="CLOB">REMARK</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PROVINCE_AID" maxlength="24" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PROVINCE_AID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CITY_AID" maxlength="24" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CITY_AID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COUNTY_AID" maxlength="24" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">COUNTY_AID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TOWN_AID" maxlength="24" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">TOWN_AID</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

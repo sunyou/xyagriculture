@@ -1,0 +1,81 @@
+/* CSS Document */
+body,html{background: url("../images/bg.jpg") no-repeat top center #fff;}
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend{margin:0;padding:0;}
+body,button,input,select,textarea{font-family: arial,"Microsoft Yahei","Hiragino Sans GB",sans-serif; font-size: 62.5%;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+ul,ol{list-style:none;}
+a{ color: #666; text-decoration: none; }
+a:hover { color: #f60;  }
+.wrap100 { width: 100%; margin: 0 auto;  }
+.wrap { width: 1000px; margin: 0 auto;   }
+.wrap2 { width: 1200px; margin: 0 auto;   }
+img { border:0;}
+.fl { float:left;}
+.fr { float:right;}
+.cl{ clear:both;}
+
+
+
+.login_icon1{width:25px; height:22px; background:url(../images/icon5.png) no-repeat; display:block;}
+.login_icon2{width:25px; height:30px; background:url(../images/icon4.png) no-repeat 0 -1px;  display:block;}
+.login_icon3{width:25px; height:30px; background:url(../images/icon3.png) no-repeat 0 -1px;  display:block;}
+.login_icon{ background:url(../images/l-icon2.png) no-repeat; width:20px; height:16px; display:block; margin:6px 0 0 20px; float:left;}
+.reset_icon{ background:url(../images/l-icon1.png) no-repeat; width:21px; height:21px; display:block; margin:3px 0 0 20px; float:left;}
+.prompt_icon{ background:url(../images/marking1.gif) no-repeat; width:18px; height:17px; display:block; float:left; margin-top:6px; margin-right:10px; }
+
+
+.loginContent{ position: relative; min-height: 600px;}
+
+
+.logo{ position: absolute; top:160px; left:105px;}
+.loginContent .loginList{ position: absolute; top:240px; right:270px; width:271px;}
+.loginContent .loginList .prompt{margin-top:20px; margin-left:55px; color:#f60; position:absolute; line-height:30px; font-size:14px;}
+.loginContent .loginList ul{margin-top:20px;}
+.loginContent .loginList ul li{ margin-bottom:15px; position:relative; height:40px; border:1px solid #9ecbbf; border-radius:3px; overflow:hidden;}
+.loginContent .loginList ul li span{ position:absolute; z-index:1; top:10px; left:40px; font-size:16px; color:#999;}
+.loginContent .loginList ul li i{ position:absolute; left:10px; z-index:2; top:10px; }
+.loginContent .loginList ul li a{ position:absolute; left:150px; z-index:2; top:0px; }
+.loginContent .loginList ul li input{ height:41px; font-size:16px; background: none;  position:absolute; z-index:2; border: none; outline: none; text-indent: 40px; line-height: 16px; }
+
+.nav{ position: relative; width: 490px; }
+.nav i{ height: 15px; display: block; width: 100%; }
+.nav .menu1{ position: absolute; top:147px; left:446px;  width: 80px; height: 80px;display: block; font-size: 16px; text-align: center;}
+.nav .menu1 a{ color: #33b19a; display: block;  }
+.nav .menu2{ position: absolute; top:100px; left:556px;  width: 80px; height: 80px; display: block; font-size: 16px; text-align: center;}
+.nav .menu2 a{ color: #33b19a; display: block; margin-top:15px;   }
+.nav .menu3{ position: absolute; top:132px; left:669px;  width: 80px; height: 80px;display: block; font-size: 16px; text-align: center;}
+.nav .menu3 a{ color: #33b19a; display: block;  }
+
+.nav .menu1 a:hover,.nav .menu1 a.current{background: url("../images/menuBg.png") no-repeat; width: 80px; height: 80px; color: #fff;}
+.nav .menu2 a:hover,.nav .menu2 a.current{background: url("../images/menuBg.png") no-repeat 0 0; width: 80px; height: 80px; color: #fff;}
+.nav .menu3 a:hover,.nav .menu3 a.current{background: url("../images/menuBg.png") no-repeat 0 0; width: 80px; height: 80px; color: #fff;}
+
+
+
+
+
+
+.SH_jiz{width:100%;height:26px;}
+.SH_fxk01{display:block;width:26px;height:26px;float:left;background:url(../images/icon1.png) no-repeat;}
+.SH_fxk02{display:block;width:26px;height:26px;float:left;background:url(../images/icon2.png) no-repeat;}
+.SH_jiz span{display:block;float:left;padding-left:6px;line-height:26px;font-size:14px;color:#666;}
+.SH_jiz a{line-height:26px;font-size:14px;color:#666;}
+
+.loginContent .loginList .btn { text-align:center; padding-top:15px;}
+.loginContent .loginList .btn button{ border:none;clear:both;width:260px;height:43px; border-radius:5px; font-size:18px;  color:#fff;margin-right:10px;cursor:pointer;text-align:center; outline:none;background:url(../images/login_Btn_bg.jpg) repeat-x 0 0; overflow:hidden;}
+.loginContent .loginList .btn button:hover{ background:url(../images/login_Btn_bg.jpg) repeat-x 0 -43px;}
+
+.copyright {padding-top:30px;text-align:center; color:#fff;}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="MaterialCategory" mainattr="CATEGORY_ID">
+    <mapingenty type="table">MATERIALCATEGORY</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="CATEGORY_ID" maxlength="72" datatype="String" type="PK">
+        <mapingcol datatype="CHAR">CATEGORY_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CATEGORY_NAME" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CATEGORY_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PARENTID" maxlength="72" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">PARENTID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PYSHORT" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PYSHORT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MATERIALTYPE_CODE" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">MATERIALTYPE_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="NOTES" maxlength="20" type="COL">
+        <mapingcol datatype="CLOB">NOTES</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_USER" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CREATE_USER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_TIME" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">CREATE_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MODIFIED_USER" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">MODIFIED_USER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MODIFIED_TIME" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">MODIFIED_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

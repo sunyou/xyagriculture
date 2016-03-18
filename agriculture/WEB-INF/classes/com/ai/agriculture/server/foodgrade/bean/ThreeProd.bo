@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="ThreeProd" mainattr="THREEPROD_ID">
+    <mapingenty type="table">THREEPROD</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="THREEPROD_ID" maxlength="72" datatype="String" type="PK">
+        <mapingcol datatype="CHAR">THREEPROD_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CERNAME" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CERNAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PYSHORT" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PYSHORT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CERNO" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CERNO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CRITERIA_LEVEL" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">CRITERIA_LEVEL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_ID" maxlength="72" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">COFARMER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="APPPROD" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">APPPROD</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SIGNDATE" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">SIGNDATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SIGNDEPT" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">SIGNDEPT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EFFECTDATE" maxlength="200" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">EFFECTDATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CONTENT" maxlength="512" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CONTENT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODSNAME" maxlength="1024" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">GOODSNAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CHANDIADDR" maxlength="1024" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CHANDIADDR</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

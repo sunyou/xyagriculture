@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="IgTran" mainattr="TRANID">
+    <mapingenty type="table">IG_TRAN</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="TRANID" maxlength="10" datatype="Long" type="PK">
+        <mapingcol datatype="NUMBER">TRANID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GPS_NO" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">GPS_NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TEM" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">TEM</mapingcol>
+      </attr>
+      <attr floatlength="0" name="HUM" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">HUM</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LON" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">LON</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LAT" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">LAT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERDATE" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">OPERDATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REMARK" maxlength="512" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">REMARK</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

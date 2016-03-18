@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="QueryPackageDetail" mainattr="DETAIL_UID">
+    <mapingenty type="query">select t1.*,
+       t2.Package_No,
+       t2.Package_Date,
+       t3.PLotHarvest_No,
+       t3.Goods_ID,
+       t4.Goods_Name,
+       t5.UnitName,
+       t6.GoodVariety_Name,
+       t6.GoodsValue
+      
+  from Package_Detail t1
+  left join Package t2
+    on t2.Package_UID = t1.Package_UID
+  left join PLotHarvest t3
+    on t3.PLotOper_ID = t1.HarvestOperate_ID
+  left join Goods t4
+    on t4.Goods_ID = t3.Goods_ID
+  left join Units t5
+    on t5.UnitID = t3.UnitID
+  left join V_PlantLot t6
+    on t6.PlantLot_ID = t3.PlantLot_ID
+</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="DETAIL_UID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">DETAIL_UID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PACKAGE_UID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">PACKAGE_UID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="HARVESTOPERATE_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">HARVESTOPERATE_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="QTY" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">QTY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATEUSER" maxlength="16" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">OPERATEUSER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="UNITID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">UNITID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PACKAGE_NO" maxlength="120" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PACKAGE_NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PACKAGE_DATE" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">PACKAGE_DATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PLOTHARVEST_NO" maxlength="20" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PLOTHARVEST_NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODS_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">GOODS_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODS_NAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">GOODS_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="UNITNAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">UNITNAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODVARIETY_NAME" maxlength="256" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">GOODVARIETY_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODSVALUE" maxlength="308" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">GOODSVALUE</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

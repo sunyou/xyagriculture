@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="QueryHarvestNoByLabelNo" mainattr="DETAIL_UID">
+    <mapingenty type="query">select *
+  from package_detail d
+ where d.package_uid =
+       (select t.object_uid
+          from label_print t
+         where t.label_no = :LABEL_NO )</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="DETAIL_UID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">DETAIL_UID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PACKAGE_UID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">PACKAGE_UID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="HARVESTOPERATE_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">HARVESTOPERATE_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="QTY" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">QTY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATEUSER" maxlength="16" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">OPERATEUSER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="UNITID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">UNITID</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

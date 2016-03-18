@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="GB2312"?>
+<proconfig>
+    <DataSrcList>
+    <!-- fuZhou -->
+         <DataSrc>
+            <name>Agriculture</name>
+            <type>DBCP</type>
+            <dbType>ORACLE</dbType>
+            <srcUrl>jdbc:oracle:thin:@192.168.1.101:1521:orcl</srcUrl>
+            <minLimit>0</minLimit>
+            <maxLimit>5</maxLimit>
+            <userName>Agriculture</userName>
+            <password>{o}Agriculture123Abc</password>
+            <propString>maxWait=3000;maxIdle=50</propString>
+        </DataSrc>
+     
+         <DataSrc>
+            <name>Agriculture_beijing</name>
+            <type>DBCP</type>
+            <dbType>ORACLE</dbType>
+            <srcUrl>jdbc:oracle:thin:@124.207.3.107:11521:orcl</srcUrl>
+            <minLimit>0</minLimit>
+            <maxLimit>5</maxLimit>
+            <userName>Agriculture</userName>
+            <password>{o}Agriculture123Abc</password>
+            <propString>maxWait=3000;maxIdle=50</propString>
+        </DataSrc> 
+    </DataSrcList>
+    
+    <transactionlist default-transaction="local" independence-transaction="local"
+                     container-implclass="com.ai.appframe2.transaction.TransactionLocal">
+        <transaction name="local" implclass="com.ai.appframe2.transaction.TransactionLocal"
+                     default-datasource="Agriculture">
+            <DataSrcLink ailas-name="Agriculture" actul-name="Agriculture"></DataSrcLink>
+            <DataSrcLink ailas-name="Agriculture_beijing" actul-name="Agriculture_beijing"></DataSrcLink>
+        </transaction>
+    </transactionlist>
+
+    <service-mapping>
+
+        <service name="com.ai"
+                 service-type="singleton" transaction-name="local" transaction-type="join" datasource-name="Agriculture"/>
+	<service name="com.ai.agriculture.syn"
+                 service-type="singleton" transaction-name="local" transaction-type="join" datasource-name="Agriculture_beijing"/>
+
+    </service-mapping>
+
+</proconfig>

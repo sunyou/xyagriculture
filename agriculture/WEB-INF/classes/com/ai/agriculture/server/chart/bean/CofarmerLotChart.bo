@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="CofarmerLotChart" mainattr="COFARMER_ID">
+    <mapingenty type="query">select 
+t1.CoFarmer_Id,
+(select t2.cofarmer_name from CoFarmer t2 where t2.CoFarmer_ID=t1.CoFarmer_ID and rownum &lt;=1 ) cofarmer_name,
+SUM(Areas) AS Areas 
+from PlantLot t1
+group by t1.CoFarmer_Id</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="COFARMER_ID" maxlength="36" datatype="String" type="PK">
+        <mapingcol datatype="CHAR">COFARMER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_NAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">COFARMER_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AREAS" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">AREAS</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

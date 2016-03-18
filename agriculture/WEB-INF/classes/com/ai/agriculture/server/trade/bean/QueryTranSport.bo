@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="QueryTranSport" mainattr="TS_ID">
+    <mapingenty type="query">SELECT T1.*, T2.CoFarmer_Name, T3.SH_NAME FROM TranSport T1 LEFT JOIN CoFarmer T2 ON T1.CoFarmer_ID = T2.CoFarmer_ID LEFT JOIN StoreHouse T3 ON T1.SH_ID = T3.SH_ID
+   </mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="TS_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">TS_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TS_NO" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">TS_NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">COFARMER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SH_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">SH_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CAR" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">CAR</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TEM" maxlength="40" datatype="Long" type="COL">
+        <mapingcol datatype="DECIMAL">TEM</mapingcol>
+      </attr>
+      <attr floatlength="0" name="HUM" maxlength="40" datatype="Long" type="COL">
+        <mapingcol datatype="DECIMAL">HUM</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AMOUT" maxlength="40" datatype="Long" type="COL">
+        <mapingcol datatype="DECIMAL">AMOUT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATER" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">OPERATER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STARTDATE" maxlength="19" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATETIME">STARTDATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ENDDATE" maxlength="19" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATETIME">ENDDATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ENDADD" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">ENDADD</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ISCLEAR" maxlength="11" datatype="Long" type="COL">
+        <mapingcol datatype="DECIMAL">ISCLEAR</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ISRECEIVE" maxlength="11" datatype="Long" type="COL">
+        <mapingcol datatype="DECIMAL">ISRECEIVE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="19" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATETIME">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REMARK" maxlength="21845" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">REMARK</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_NAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">COFARMER_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SH_NAME" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR">SH_NAME</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

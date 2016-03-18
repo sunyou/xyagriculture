@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="QueryGoodsPestImage" mainattr="IMAGE_ID">
+    <mapingenty type="query">select t1.*, t2.Goods_Name,t3.pest_id, t3.GoodPest_Name, t3.PestDescr
+  from GoodsPestImage t1
+  left join Goods t2
+    on t2.Goods_ID = t1.Goods_ID
+  left join GoodsPest t3
+    on t3.GoodsPest_ID = t1.GoodsPest_ID
+ order by t1.Image_ID asc
+</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="IMAGE_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">IMAGE_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODSPEST_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">GOODSPEST_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODS_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">GOODS_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PESTPARTCODE" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">PESTPARTCODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="IMAGEURL" maxlength="256" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">IMAGEURL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_USER" maxlength="256" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CREATE_USER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_TIME" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">CREATE_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MODIFIED_USER" maxlength="256" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">MODIFIED_USER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MODIFIED_TIME" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">MODIFIED_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ICONURL" maxlength="500" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">ICONURL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODS_NAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">GOODS_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PEST_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">PEST_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODPEST_NAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">GOODPEST_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PESTDESCR" maxlength="4000" type="COL">
+        <mapingcol datatype="CLOB">PESTDESCR</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

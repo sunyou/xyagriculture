@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="CoFarmerMaterialView" mainattr="COMAT_UID">
+    <mapingenty type="query">SELECT T1.COMAT_UID,
+       T1.COFARMER_ID,
+       T1.OBJECT_ID,
+       T1.OBJECT_NAME,
+       T1.CMTYPE,
+       T1.QTY,
+       T1.UNITID,
+       T1.SUPPLIER_ID,
+       T1.SUPPLIER_NAME,
+       T1.PRODUCE_NAME,
+       T1.OPERATEDATE,
+       T1.OPERATEUSER,
+       T1.TIMESTAMP,
+       T1.DOCFILESRC,
+       T1.OPERID,
+       T2.COFARMER_NAME,
+       T3.UNITNAME,
+       T4.HANLIANG,
+       T4.MAINCOMPONENT,
+       T4.USABLERANGE,
+       T4.TOXICITY,
+       CASE
+         WHEN T4.TOXICITY = '高毒' THEN
+          1
+         WHEN T4.TOXICITY = '未知' THEN
+          2
+         WHEN T4.TOXICITY = '中毒' THEN
+          3
+         WHEN T4.TOXICITY = '低毒' THEN
+          4
+         WHEN T4.TOXICITY = '微毒' THEN
+          5
+         ELSE
+          9
+       END AS TOXICITYSTATE
+
+  FROM COFARMERMATERIAL T1
+  LEFT OUTER JOIN COFARMER T2
+    ON T2.COFARMER_ID = T1.COFARMER_ID
+  LEFT OUTER JOIN UNITS T3
+    ON T3.UNITID = T1.UNITID
+  LEFT OUTER JOIN MATERIAL_QUERY T4
+    ON T4.MATERIAL_ID = T1.OBJECT_ID</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="COMAT_UID" maxlength="36" datatype="String" type="PK">
+        <mapingcol datatype="CHAR">COMAT_UID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">COFARMER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OBJECT_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">OBJECT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OBJECT_NAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">OBJECT_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CMTYPE" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">CMTYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="QTY" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">QTY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="UNITID" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">UNITID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SUPPLIER_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">SUPPLIER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SUPPLIER_NAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">SUPPLIER_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PRODUCE_NAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PRODUCE_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATEDATE" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">OPERATEDATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATEUSER" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">OPERATEUSER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DOCFILESRC" maxlength="256" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">DOCFILESRC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">OPERID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_NAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">COFARMER_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="UNITNAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">UNITNAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="HANLIANG" maxlength="4000" type="COL">
+        <mapingcol datatype="CLOB">HANLIANG</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MAINCOMPONENT" maxlength="4000" type="COL">
+        <mapingcol datatype="CLOB">MAINCOMPONENT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="USABLERANGE" maxlength="4000" type="COL">
+        <mapingcol datatype="CLOB">USABLERANGE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TOXICITY" maxlength="255" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">TOXICITY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TOXICITYSTATE" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">TOXICITYSTATE</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

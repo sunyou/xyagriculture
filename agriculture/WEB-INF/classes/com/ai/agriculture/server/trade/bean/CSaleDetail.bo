@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="CSaleDetail" mainattr="BILL_ID">
+    <mapingenty type="table">CSALEDETAIL</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="DETAIL_ID" maxlength="72" datatype="String" type="PK">
+        <mapingcol datatype="CHAR">DETAIL_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="BILL_ID" maxlength="72" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">BILL_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STYPE" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">STYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OBJECT_ID" maxlength="72" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">OBJECT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OBJECT_NO" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">OBJECT_NO</mapingcol>
+      </attr>
+      <attr floatlength="2" name="QTY" maxlength="38" datatype="Float" type="COL">
+        <mapingcol datatype="NUMBER">QTY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="UNITID" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">UNITID</mapingcol>
+      </attr>
+      <attr floatlength="2" name="PRICE" maxlength="38" datatype="Float" type="COL">
+        <mapingcol datatype="NUMBER">PRICE</mapingcol>
+      </attr>
+      <attr floatlength="2" name="AMOUNT" maxlength="38" datatype="Float" type="COL">
+        <mapingcol datatype="NUMBER">AMOUNT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="NOTES" maxlength="1000" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">NOTES</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

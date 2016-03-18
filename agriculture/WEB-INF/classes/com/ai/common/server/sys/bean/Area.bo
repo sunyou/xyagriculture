@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="Area" mainattr="AREA_ID">
+    <mapingenty type="table">AREAS</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="AREA_ID" maxlength="20" datatype="String" type="PK">
+        <mapingcol datatype="VARCHAR2">AREA_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AREA_NAME" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">AREA_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PYSHORT" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PYSHORT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PROVICE" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PROVICE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REGION" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">REGION</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COUNTY" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">COUNTY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TOWN" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">TOWN</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PARENTID" maxlength="20" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PARENTID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AREA_FULLNAME" maxlength="500" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">AREA_FULLNAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_USER" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CREATE_USER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_TIME" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">CREATE_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MODIFIED_USER" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">MODIFIED_USER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MODIFIED_TIME" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">MODIFIED_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LEAF_FLAG" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">LEAF_FLAG</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TREELEVEL" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">TREELEVEL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LATITUDE" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">LATITUDE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LONGITUDE" maxlength="20" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">LONGITUDE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REMARK" maxlength="500" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">REMARK</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

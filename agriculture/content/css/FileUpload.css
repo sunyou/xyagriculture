@@ -1,0 +1,180 @@
+﻿@charset "utf-8";
+
+
+html,body,form{margin:0px;padding:0px;}
+
+.uploadfile{
+	display:inline-block; width:80px; height:40px; position:relative; overflow:hidden;
+	text-decoration:underline;color:#1F75CC;
+	cursor:pointer;
+}
+.upload_file{
+	position:absolute; right:0; top:0; font-size:80px; opacity:0; filter:alpha(opacity=0);cursor:pointer;
+}
+
+.leftout{
+	float:left;
+	height:26px;
+	line-height:26px;
+	margin:0px 5px 0px 0px;
+}
+.clear{
+    clear: both;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+.inputout,.inputinner{
+	width:160px;
+	height:36px;
+	background:url(images/common.png) no-repeat top left scroll;
+	overflow:hidden;
+	display:inline-block;
+	margin:0px;
+}
+
+.inputout{
+	padding-left:5px;
+}
+
+.inputinner{
+	float:left;
+	background-position:top right;
+	background-color:#ffffff;
+}
+
+.txt_input{
+	border:none;
+	height:35px;
+	line-height:35px;
+	background:transparent;
+}
+
+.btn_cls_left,.btn_cls_right{
+	height:26px;
+	background:url(images/common.png) no-repeat top left scroll;
+	overflow:hidden;
+	display:inline-block;
+	margin:0px;
+	cursor:pointer;
+}
+
+.btn_cls_left{
+	padding-left:5px;
+}
+
+.btn_cls_right{
+	float:left;
+	background-position:top right;
+	background-color:#ffffff;
+	position:relative;
+}
+
+.btn_inerbtton{
+	border:none;
+	height:26px;
+	line-height:26px;
+	background:transparent;
+	cursor:pointer;
+	display:inline;
+	margin:0px;
+	padding:0px;
+	text-indent:14px;
+	padding-right:5px;
+	z-index:5;
+	position:relative;
+}
+
+.iner_icon_upload{
+	width:13px;
+	height:13px;
+	display:inline-block;
+	background:url(images/common.png) no-repeat -124px -179px scroll;
+	position:absolute;
+	top:8px;
+	left:3px;
+	z-index:4;
+}
+
+.iner_icon_download{
+	width:13px;
+	height:13px;
+	display:inline-block;
+	background:url(images/common.png) no-repeat -16px -179px scroll;
+	position:absolute;
+	top:13px;
+	left:3px;
+	z-index:4;
+}
+
+/****/
+.GridViewStyle
+{   
+    border-right: 2px solid #A7A6AA;
+    border-bottom: 2px solid #A7A6AA;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+    padding: 4px;
+}
+
+.GridViewStyle a
+{
+    color: #FFFFFF;
+}
+
+.GridViewHeaderStyle th
+{
+    border-left: 1px solid #EBE9ED;
+    border-right: 1px solid #EBE9ED;
+}
+
+.GridViewHeaderStyle
+{
+    background-color: #5D7B9D;
+    font-weight: bold;
+    color: White;
+}
+
+.GridViewFooterStyle
+{
+    background-color: #5D7B9D;
+    font-weight: bold;
+    color: White;
+}
+
+.GridViewRowStyle
+{
+    background-color: #F7F6F3;
+    color: #333333;
+}
+
+.GridViewAlternatingRowStyle
+{
+    background-color: #FFFFFF;
+    color: #284775;
+}
+
+.GridViewRowStyle td, .GridViewAlternatingRowStyle td
+{
+    border: 1px solid #EBE9ED;
+}
+
+.GridViewSelectedRowStyle
+{
+    background-color: #E2DED6;
+    font-weight: bold;
+    color: #333333;
+}
+
+.GridViewPagerStyle
+{
+    background-color: #284775;
+    color: #FFFFFF;
+}
+
+.GridViewPagerStyle table /**//* to center the paging links*/
+{
+    margin: 0 auto 0 auto;
+}

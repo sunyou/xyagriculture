@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="LabelPrint" mainattr="PRINT_UID">
+    <mapingenty type="table">LABEL_PRINT</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="PRINT_UID" maxlength="72" datatype="String" type="PK">
+        <mapingcol datatype="CHAR">PRINT_UID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STYPE" maxlength="10" datatype="Long" type="COL" remark="生成溯源码类型(1:采收;2:包装)">
+        <mapingcol datatype="NUMBER">STYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OBJECT_UID" maxlength="72" datatype="String" type="COL" remark="套装ID或采收批次ID">
+        <mapingcol datatype="CHAR">OBJECT_UID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LABEL_NO" maxlength="512" datatype="String" type="COL" remark="溯源码">
+        <mapingcol datatype="VARCHAR2">LABEL_NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PRINT_DATE" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">PRINT_DATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OBJECT_NO" maxlength="512" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">OBJECT_NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_ID" maxlength="72" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">COFARMER_ID</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

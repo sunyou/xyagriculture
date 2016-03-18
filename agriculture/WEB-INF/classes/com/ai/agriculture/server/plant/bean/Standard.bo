@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="Standard" mainattr="SID">
+    <mapingenty type="table">STANDARD</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="SID" maxlength="10" datatype="Long" type="PK">
+        <mapingcol datatype="NUMBER">SID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SNAME" maxlength="1024" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">SNAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SNO" maxlength="1024" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">SNO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="STYPE" maxlength="1024" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">STYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="SSTATE" maxlength="1024" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">SSTATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="UPLOADDATE" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">UPLOADDATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REFRESHDATE" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">REFRESHDATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DOCSIZE" maxlength="1024" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">DOCSIZE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="INTRODUCTION" maxlength="20" type="COL">
+        <mapingcol datatype="CLOB">INTRODUCTION</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DOCSRC" maxlength="1024" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">DOCSRC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

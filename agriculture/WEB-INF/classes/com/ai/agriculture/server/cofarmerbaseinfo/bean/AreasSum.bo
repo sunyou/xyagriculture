@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="AreasSum" mainattr="AREAS">
+    <mapingenty type="query">select CoFarmer_ID,sum(Areas) areas
+  from Plot
+  group by CoFarmer_ID</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="COFARMER_ID" maxlength="36" datatype="String" type="PK">
+        <mapingcol datatype="VARCHAR2">COFARMER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="AREAS" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">AREAS</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

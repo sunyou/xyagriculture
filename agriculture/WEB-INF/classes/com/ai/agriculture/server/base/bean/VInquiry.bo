@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="VInquiry" mainattr="ID">
+    <mapingenty type="query">SELECT t1_1.ID, 
+       t1_1.object_id, 
+       t1_1.inquiry_type, 
+       t1_1.CoFarmer_ID, 
+       t1_1.Operators, 
+       t1_1.Operate_Date, 
+       t1_1.reason , 
+       t1_1.Timestamp, 
+       t1_1.ResPerson ResPerson, 
+       t1_1.ResDate, 
+       t1_1.ResNote, 
+       t1_1.IsActive, 
+       t2_1.CoFarmer_Name, 
+       case 
+         WHEN t1_1.inquiry_type = 1 THEN 
+          t3_1.Object_Name 
+         WHEN t1_1.inquiry_type = 2 THEN 
+          case 
+            when t4_1.Material_Name is null then
+               t4_1.Material_Name
+            else
+               t5_1.Material_Name
+          end  
+         ELSE 
+          t5_1.Material_Name 
+       END MaterialInq_Name, 
+       t3_1.Object_Name, 
+       t4_1.Material_Name,
+       t3_1.operatedate operDate
+  FROM Inquiry t1_1 
+  LEFT OUTER JOIN CoFarmer t2_1 
+    ON t2_1.CoFarmer_ID = t1_1.CoFarmer_ID 
+  LEFT OUTER JOIN CoFarmerMaterial t3_1 
+    ON t3_1.CoMat_UID = t1_1.object_id 
+  LEFT OUTER JOIN ( 
+          SELECT t1.PLotOper_ID, t4.Object_Name Material_Name 
+                     FROM PLotSpray t1 
+                     LEFT OUTER JOIN CoFarmerMaterial t4 
+                       ON t4.CoMat_UID = t1.CM_ID) t4_1 
+    ON t4_1.PLotOper_ID = t1_1.object_id 
+  LEFT OUTER JOIN (SELECT t1.PLotOper_ID, t4.Object_Name Material_Name 
+                     FROM PLotFertilize t1                    
+                     LEFT OUTER JOIN CoFarmerMaterial t4 
+                       ON t4.CoMat_UID = t1.CM_ID) t5_1 
+    ON t5_1.PLotOper_ID = t1_1.object_id 
+    
+    
+    </mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="ID" maxlength="36" datatype="String" type="PK">
+        <mapingcol datatype="CHAR">ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OBJECT_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">OBJECT_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="INQUIRY_TYPE" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">INQUIRY_TYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_ID" maxlength="36" datatype="String" type="COL">
+        <mapingcol datatype="CHAR">COFARMER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATORS" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">OPERATORS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERATE_DATE" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">OPERATE_DATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REASON" maxlength="4000" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">REASON</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="RESPERSON" maxlength="4000" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">RESPERSON</mapingcol>
+      </attr>
+      <attr floatlength="0" name="RESDATE" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">RESDATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="RESNOTE" maxlength="4000" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">RESNOTE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ISACTIVE" maxlength="22" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">ISACTIVE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COFARMER_NAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">COFARMER_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MATERIALINQ_NAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">MATERIALINQ_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OBJECT_NAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">OBJECT_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MATERIAL_NAME" maxlength="50" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">MATERIAL_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="OPERDATE" maxlength="7" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">OPERDATE</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

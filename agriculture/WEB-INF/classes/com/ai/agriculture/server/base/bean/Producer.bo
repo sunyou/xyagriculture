@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="Producer" mainattr="PRODUCER_ID">
+    <mapingenty type="table">PRODUCER</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="PRODUCER_ID" maxlength="72" datatype="String" type="PK">
+        <mapingcol datatype="CHAR">PRODUCER_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PRODUCER_NO" maxlength="24" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PRODUCER_NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PRODUCER_NAME" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PRODUCER_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PYSHORT" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PYSHORT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PRODUCER_ADDRESS" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PRODUCER_ADDRESS</mapingcol>
+      </attr>
+      <attr floatlength="2" name="REG_CAPITAL" maxlength="38" datatype="Float" type="COL">
+        <mapingcol datatype="NUMBER">REG_CAPITAL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LICENSE_NUMBER" maxlength="64" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">LICENSE_NUMBER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PRODUCER_CONTACT" maxlength="32" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PRODUCER_CONTACT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PRODUCER_TEL" maxlength="30" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PRODUCER_TEL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="RECORD_DATE" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">RECORD_DATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="LEGAL_REPRESENT" maxlength="40" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">LEGAL_REPRESENT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ISACTIVE" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">ISACTIVE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="EMAIL" maxlength="512" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">EMAIL</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

@@ -1,0 +1,20 @@
+.t-icon1{ background:url(../images/user_img.gif) no-repeat; height:23px; width:23px; display:block; float:left; margin-top:20px; margin-right:5px;}
+.t-icon2{ background:url(../images/user_img1.gif) no-repeat; height:23px; width:23px; display:block; float:left; margin-top:20px; margin-right:5px;}
+.t-icon3{ background:url(../images/user_img2.gif) no-repeat; height:23px; width:23px; display:block; float:left; margin-top:20px; margin-right:5px;}
+
+.menu-arrow-left{ background-image:url(../images/arrow1.jpg); background-repeat: no-repeat; height:33px; width:21px; display: inline-block ;  background-position: 0 -33px;}
+.menu-arrow-right{ background-image:url(../images/arrow1.jpg); background-repeat: no-repeat; height:33px; width:21px; display: inline-block ;  background-position: 0 0;}
+
+.left-arrow-right{ background-image:url(../images/marking3.png); background-repeat: no-repeat; background-position: 18px 10px; display: block; }
+.left-arrow-bottom{ background-image:url(../images/marking1.png); background-repeat: no-repeat; background-position: 10px 15px; display: block; }
+
+
+/*左侧图标*/
+.l-icon1{ background-image:url(../images/l-icon1.png); background-repeat:no-repeat; line-height:50px; height:50px; width:100%; display:block; float:left; text-indent:60px; background-position:15px 6px  }
+.l-icon1:hover,.l-icon1.current{ background-image:url(../images/l-icon1_white.png); background-repeat:no-repeat; background-color:#80b566; color:#fff;}
+.l-icon2{ background-image:url(../images/l-icon2.png); background-repeat:no-repeat; line-height:50px; height:50px; width:100%; display:block; float:left; text-indent:60px; background-position:15px 6px  }
+.l-icon2:hover,.l-icon2.current{ background-image:url(../images/l-icon2_white.png); background-repeat:no-repeat; background-color:#80b566; color:#fff;}
+.l-icon3{ background-image:url(../images/l-icon3.png); background-repeat:no-repeat; line-height:50px; height:50px; width:100%; display:block; float:left; text-indent:60px; background-position:20px 6px  }
+.l-icon3:hover,.l-icon3.current{ background-image:url(../images/l-icon3_white.png); background-repeat:no-repeat; background-color:#80b566; color:#fff;}
+.l-icon4{ background-image:url(../images/l-icon4.png); background-repeat:no-repeat; line-height:50px; height:50px; width:100%; display:block; float:left; text-indent:60px; background-position:20px 6px;}
+.l-icon4:hover,.l-icon4.current{ background-image:url(../images/l-icon4_white.png); background-repeat:no-repeat; background-color:#80b566; color:#fff;}

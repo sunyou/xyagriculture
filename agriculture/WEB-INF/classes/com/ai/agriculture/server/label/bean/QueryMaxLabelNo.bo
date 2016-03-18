@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="QueryMaxLabelNo" mainattr="LABEL_NO">
+    <mapingenty type="query">select max(t.label_no)  label_no from label_print t where substr(t.LABEL_NO,0,14) = :LABEL_NO  </mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="LABEL_NO" maxlength="256" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">LABEL_NO</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="CriteriaDoc" mainattr="CRITERIADOC_ID">
+    <mapingenty type="table">CRITERIADOC</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="CRITERIADOC_ID" maxlength="72" datatype="String" type="PK">
+        <mapingcol datatype="CHAR">CRITERIADOC_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CRITERERIADOC_NAME" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CRITERERIADOC_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PYSHORT" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">PYSHORT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GOODS_NAMES" maxlength="512" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">GOODS_NAMES</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CRITERIA_LEVEL" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">CRITERIA_LEVEL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DOCFILENAME" maxlength="256" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">DOCFILENAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DOCFILECONTENT" maxlength="20" type="COL">
+        <mapingcol datatype="BLOB">DOCFILECONTENT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DOCFILEPATH" maxlength="256" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">DOCFILEPATH</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CRITERIATYPE" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">CRITERIATYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CRITERIA_MAKER" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CRITERIA_MAKER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="VERSION" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">VERSION</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ISACTIVE" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">ISACTIVE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_USER" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CREATE_USER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_TIME" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">CREATE_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MODIFIED_USER" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">MODIFIED_USER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MODIFIED_TIME" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">MODIFIED_TIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CRITERERIADOC_NO" maxlength="240" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CRITERERIADOC_NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DOC_TYPE" maxlength="1" datatype="String" type="COL" remark="标准文档类型：1、农作物种植标准；2、无公害生产标准；3、农资使用标准">
+        <mapingcol datatype="VARCHAR2">DOC_TYPE</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

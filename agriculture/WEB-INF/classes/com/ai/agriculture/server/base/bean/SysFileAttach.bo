@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="SysFileAttach" mainattr="FILE_ID">
+    <mapingenty type="table">SYS_FILE_ATTACH</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="FILE_ID" maxlength="64" datatype="String" type="PK">
+        <mapingcol datatype="VARCHAR2">FILE_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="FILE_NAME" maxlength="64" datatype="String" type="COL" remark="附件名称">
+        <mapingcol datatype="VARCHAR2">FILE_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ORGINAL_NAME" maxlength="64" datatype="String" type="COL" remark="附件原名">
+        <mapingcol datatype="VARCHAR2">ORGINAL_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MODULE_NAME" maxlength="32" datatype="String" type="COL" remark="模块名">
+        <mapingcol datatype="VARCHAR2">MODULE_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="FILE_TYPE" maxlength="1" datatype="String" type="COL" remark="附件分类 1图片 2音频 3视频 4文件 5其它">
+        <mapingcol datatype="VARCHAR2">FILE_TYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="FILE_PATH" maxlength="128" datatype="String" type="COL" remark="文件路径">
+        <mapingcol datatype="VARCHAR2">FILE_PATH</mapingcol>
+      </attr>
+      <attr floatlength="0" name="FILE_STATUS" maxlength="1" datatype="String" type="COL" remark="文件状态">
+        <mapingcol datatype="VARCHAR2">FILE_STATUS</mapingcol>
+      </attr>
+      <attr floatlength="0" name="FILE_DESC" maxlength="128" datatype="String" type="COL" remark="文件描述">
+        <mapingcol datatype="VARCHAR2">FILE_DESC</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_USER" maxlength="16" datatype="String" type="COL" remark="创建用户">
+        <mapingcol datatype="VARCHAR2">CREATE_USER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CREATE_TIME" maxlength="20" datatype="DateTime" type="COL" remark="创建时间">
+        <mapingcol datatype="DATE">CREATE_TIME</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

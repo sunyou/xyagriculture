@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="IgCar" mainattr="CARID">
+    <mapingenty type="table">IG_CAR</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="CARID" maxlength="128" datatype="String" type="PK">
+        <mapingcol datatype="VARCHAR2">CARID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CARNO" maxlength="64" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CARNO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CARTYPE" maxlength="64" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">CARTYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CARCHECK" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">CARCHECK</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CARSTATE" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">CARSTATE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MAXCAP" maxlength="64" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">MAXCAP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="REMARK" maxlength="512" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">REMARK</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+      <attr floatlength="0" name="GPS_NO" maxlength="100" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">GPS_NO</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

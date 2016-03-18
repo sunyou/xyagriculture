@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sysbolist>
+  <sysbo datasource="Agriculture" name="MaterialNY" mainattr="MATERIAL_ID">
+    <mapingenty type="table">MATERIAL_NY</mapingenty>
+    <datafilter />
+    <attrlist>
+      <attr floatlength="0" name="MATERIAL_ID" maxlength="72" datatype="String" type="PK" remark="主键ID">
+        <mapingcol datatype="CHAR">MATERIAL_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="CATEGORY_ID" maxlength="72" datatype="String" type="COL" remark="物资类别">
+        <mapingcol datatype="CHAR">CATEGORY_ID</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MATERIALTYPE_CODE" maxlength="10" datatype="Long" type="COL" remark="物资种类">
+        <mapingcol datatype="NUMBER">MATERIALTYPE_CODE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MATERIAL_NAME" maxlength="100" datatype="String" type="COL" remark="肥料名称">
+        <mapingcol datatype="VARCHAR2">MATERIAL_NAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PRODUCE_NO" maxlength="1024" datatype="String" type="COL" remark="登记证号">
+        <mapingcol datatype="VARCHAR2">PRODUCE_NO</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PYSHORT" maxlength="100" datatype="String" type="COL" remark="拼音缩写">
+        <mapingcol datatype="VARCHAR2">PYSHORT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="COMMONNAME" maxlength="512" datatype="String" type="COL" remark="通用名">
+        <mapingcol datatype="VARCHAR2">COMMONNAME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="PRODUCER" maxlength="1024" datatype="String" type="COL" remark="生产厂家">
+        <mapingcol datatype="VARCHAR2">PRODUCER</mapingcol>
+      </attr>
+      <attr floatlength="0" name="MAINCOMPONENT" maxlength="512" datatype="String" type="COL" remark="主要成分">
+        <mapingcol datatype="VARCHAR2">MAINCOMPONENT</mapingcol>
+      </attr>
+      <attr floatlength="0" name="HANLIANG" maxlength="4000" datatype="String"  type="COL" remark="含量">
+        <mapingcol datatype="VARCHAR2">HANLIANG</mapingcol>
+      </attr>
+      <attr floatlength="0" name="USABLERANGE" maxlength="4000" datatype="String" type="COL" remark="防治对象">
+        <mapingcol datatype="VARCHAR2">USABLERANGE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TOXICITY" maxlength="1024" datatype="String" type="COL" remark="毒性">
+        <mapingcol datatype="VARCHAR2">TOXICITY</mapingcol>
+      </attr>
+      <attr floatlength="0" name="VALIDTIME" maxlength="1024" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">VALIDTIME</mapingcol>
+      </attr>
+      <attr floatlength="0" name="DOSETYPE" maxlength="250" datatype="String" type="COL" remark="剂型">
+        <mapingcol datatype="VARCHAR2">DOSETYPE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="NOTES" maxlength="4000" datatype="String" type="COL" remark="使用方法">
+        <mapingcol datatype="VARCHAR2">NOTES</mapingcol>
+      </attr>
+      <attr floatlength="0" name="IMAGEURL" maxlength="4000" datatype="String" type="COL">
+        <mapingcol datatype="VARCHAR2">IMAGEURL</mapingcol>
+      </attr>
+      <attr floatlength="0" name="ISACTIVE" maxlength="10" datatype="Long" type="COL">
+        <mapingcol datatype="NUMBER">ISACTIVE</mapingcol>
+      </attr>
+      <attr floatlength="0" name="TIMESTAMP" maxlength="20" datatype="DateTime" type="COL">
+        <mapingcol datatype="DATE">TIMESTAMP</mapingcol>
+      </attr>
+    </attrlist>
+    <relationlist />
+    <oplist />
+  </sysbo>
+</sysbolist>

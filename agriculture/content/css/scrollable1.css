@@ -1,0 +1,47 @@
+@charset "utf-8";
+* {
+	margin: 0px;
+	padding: 0px;
+}
+.full {
+	width: 100%;
+	clear: both;
+	height: 28px;
+	line-height: 28px;
+	background: #FAFAFA;
+}
+#toptools {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	height: 22px;
+}
+#toptools li {
+	float: left;
+	height: 22px;
+	line-height: 18px;
+}
+.full #navbar {
+	height: 22px;
+	margin: 0px;
+	padding-top: 0px;
+	width: 420px;
+}
+#bxslider{list-style-type:none;}
+
+#bxslider li{height:152px;overflow:hidden;padding-left:20px}
+
+
+.dlitem dd a{
+	color:#9B9B9B;
+	line-height:22px;
+	text-decoration:none;
+}
+
+.farmerInput{border:1px solid #9B9B9B;height:20px;line-height:20px;}
+.searchButton{border:1px solid #9B9B9B;margin-left:10px;height:20px;line-height:20px;}
+.dlitem dd
+{
+	
+}
