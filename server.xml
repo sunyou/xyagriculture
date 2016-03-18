@@ -136,7 +136,7 @@
                prefix="localhost_access_log." suffix=".txt"
                pattern="%h %l %u %t &quot;%r&quot; %s %b" />
 
-        <Context path="" docBase="aicloudhis" debug="0"/>
+        <Context path="" docBase="agriculture" debug="0"/>
       </Host>
     </Engine>
   </Service>
