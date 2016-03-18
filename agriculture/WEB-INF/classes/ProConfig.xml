@@ -6,7 +6,7 @@
             <type>DBCP</type>
            
             <dbType>MYSQL</dbType>
-            <srcUrl>jdbc:mysql://10.1.235.97:83306/agriculture?useUnicode=true&amp;characterEncoding=utf-8</srcUrl>
+            <srcUrl>jdbc:mysql://10.1.235.97:3308/agriculture?useUnicode=true&amp;characterEncoding=utf-8</srcUrl>
             <minLimit>0</minLimit>
             <maxLimit>5</maxLimit>
             <userName>agriculture</userName>
