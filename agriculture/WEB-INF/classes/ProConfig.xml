@@ -20,7 +20,6 @@
         <transaction name="local" implclass="com.ai.appframe2.transaction.TransactionLocal"
                      default-datasource="Agriculture">
             <DataSrcLink ailas-name="Agriculture" actul-name="Agriculture"></DataSrcLink>
-            <DataSrcLink ailas-name="Agriculture_beijing" actul-name="Agriculture_beijing"></DataSrcLink>
         </transaction>
     </transactionlist>
 
@@ -28,8 +27,6 @@
 
         <service name="com.ai"
                  service-type="singleton" transaction-name="local" transaction-type="join" datasource-name="Agriculture"/>
-	<service name="com.ai.agriculture.syn"
-                 service-type="singleton" transaction-name="local" transaction-type="join" datasource-name="Agriculture_beijing"/>
 
     </service-mapping>
 
